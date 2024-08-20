@@ -1,0 +1,1976 @@
+:root {
+    --border-radius-default: 0.75rem;
+    --color-placeholders: #a2acb4;
+    --color-error: #e53935;
+    --color-error-shade: #d33431;
+    --color-error-rgb: 229, 57, 53;
+    --scrollbar-width: 0px;
+    --vh: 9px;
+    --composer-text-size: 15px;
+    --message-meta-height: 19px;
+    --message-text-size: 15px;
+    --color-primary: #3390ec;
+    --color-primary-opacity: rgb(80, 162, 233, 0.118);
+    --color-primary-opacity-hover: rgb(80, 162, 233, 0.251);
+    --color-primary-tint: rgb(51, 144, 236, 0.102);
+    --color-primary-shade: rgb(74, 149, 214);
+    --color-primary-shade-rgb: 74, 149, 214;
+    --color-background: rgb(255, 255, 255);
+    --color-background-compact-menu: rgb(255, 255, 255, 0.733);
+    --color-background-compact-menu-reactions: rgb(255, 255, 255, 0.922);
+    --color-background-compact-menu-hover: rgb(0, 0, 0, 0.067);
+    --color-background-secondary: rgb(244, 244, 245);
+    --color-background-secondary-accent: rgb(228, 228, 229);
+    --color-background-own: rgb(238, 255, 222);
+    --color-background-own-apple: rgb(220, 248, 197);
+    --color-background-selected: rgb(244, 244, 245);
+    --color-background-own-selected: rgb(208, 255, 172);
+    --color-chat-hover: rgb(244, 244, 245);
+    --color-chat-active: rgb(51, 144, 236);
+    --color-chat-active-greyed: rgb(96, 167, 240);
+    --color-item-active: rgb(237, 237, 237);
+    --color-text: rgb(0, 0, 0);
+    --color-text-rgb: 0, 0, 0;
+    --color-text-secondary: rgb(112, 117, 121);
+    --color-text-secondary-rgb: 112, 117, 121;
+    --color-icon-secondary: rgb(112, 117, 121);
+    --color-text-secondary-apple: rgb(142, 142, 146);
+    --color-borders: rgb(218, 220, 224);
+    --color-borders-input: rgb(218, 220, 224);
+    --color-dividers: rgb(200, 198, 204);
+    --color-dividers-android: rgb(231, 231, 231);
+    --color-links: rgb(51, 144, 236);
+    --color-gray: rgb(196, 201, 204);
+    --color-list-icon: rgb(171, 175, 177);
+    --color-default-shadow: rgb(114, 114, 114, 0.251);
+    --color-light-shadow: rgb(114, 114, 114, 0.169);
+    --color-green: rgb(0, 199, 62);
+    --color-green-darker: rgb(0, 167, 52);
+    --color-success: rgb(0, 199, 62);
+    --color-text-meta-colored: rgb(77, 205, 94);
+    --color-reply-hover: rgb(244, 244, 244);
+    --color-reply-active: rgb(232, 233, 233);
+    --color-reply-own-hover: rgb(217, 245, 206);
+    --color-reply-own-hover-apple: rgb(203, 239, 183);
+    --color-reply-own-active: rgb(197, 236, 190);
+    --color-reply-own-active-apple: rgb(186, 230, 168);
+    --color-accent-own: rgb(69, 175, 84);
+    --color-accent-own-rgb: 69, 175, 84;
+    --color-message-meta-own: rgb(79, 174, 78, 1);
+    --color-own-links: rgb(51, 144, 236);
+    --color-code: rgb(74, 114, 154);
+    --color-code-own: rgb(60, 121, 64);
+    --color-code-bg: rgb(112, 117, 121, 0.078);
+    --color-code-own-bg: rgb(112, 117, 121, 0.078);
+    --color-composer-button: rgb(112, 117, 121, 0.8);
+    --color-message-reaction: rgb(235, 243, 253);
+    --color-message-reaction-hover: rgb(197, 222, 249);
+    --color-message-reaction-own: rgb(198, 234, 178);
+    --color-message-reaction-hover-own: rgb(181, 224, 164);
+    --color-message-reaction-chosen-hover: rgb(26, 130, 234);
+    --color-message-reaction-chosen-hover-own: rgb(63, 157, 75);
+    --color-voice-transcribe-button: rgb(232, 243, 255);
+    --color-voice-transcribe-button-own: rgb(204, 238, 191);
+    --color-topic-blue: rgb(47, 119, 114);
+    --color-topic-yellow: rgb(127, 105, 59);
+    --color-topic-violet: rgb(139, 90, 150);
+    --color-topic-green: rgb(68, 119, 74);
+    --color-topic-rose: rgb(155, 87, 107);
+    --color-topic-red: rgb(235, 104, 88);
+    --color-topic-grey: rgb(108, 108, 108);
+    --color-forum-unread-topic-hover: rgb(233, 233, 233);
+    --color-forum-hover-unread-topic-hover: rgb(226, 226, 226);
+    --color-chat-username: rgb(60, 126, 176);
+    --color-borders-read-story: rgb(196, 201, 204);
+    --color-background-menu-separator: rgb(0, 0, 0, 0.102);
+    --primary-color: #3390ec;
+    --primary-color-rgb: 51, 144, 236;
+    --light-primary-color: rgba(51, 144, 236, 0.08);
+    --light-filled-primary-color: #eef6fd;
+    --dark-primary-color: hsl(209.83783783783787, 82.95964125560539%, 52.27450980392157%);
+    --saved-color: #3390ec;
+    --light-filled-saved-color: #7cb7f2;
+    --message-out-background-color: #e3fee0;
+    --message-out-background-color-rgb: 227, 254, 224;
+    --light-message-out-background-color: rgba(227, 254, 224, 0.12);
+    --light-filled-message-out-background-color: #fbfefb;
+    --dark-message-out-background-color: hsl(114.00000000000001, 93.75000000000003%, 81.72549019607843%);
+    --message-out-primary-color: #5ca853;
+    --message-out-primary-color-rgb: 92, 168, 83;
+    --light-filled-message-out-primary-color: #d8f7d4;
+    --surface-color: #ffffff;
+    --surface-color-rgb: 255, 255, 255;
+    --danger-color: #df3f40;
+    --danger-color-rgb: 223, 63, 64;
+    --light-danger-color: rgba(223, 63, 64, 0.08);
+    --dark-danger-color: hsl(359.625, 71.42857142857143%, 48.07843137254902%);
+    --primary-text-color: #000000;
+    --primary-text-color-rgb: 0, 0, 0;
+    --secondary-text-color: #707579;
+    --secondary-text-color-rgb: 112, 117, 121;
+    --light-secondary-text-color: rgba(112, 117, 121, 0.08);
+    --light-filled-secondary-text-color: #f3f3f4;
+    --message-background-color: #ffffff;
+    --light-message-background-color: rgba(255, 255, 255, 0.08);
+    --light-filled-message-background-color: #ffffff;
+    --dark-message-background-color: hsl(0, 0%, 92%);
+    --green-color: #70b768;
+    --message-highlighting-color: hsla(86.4, 43.846153%, 45.117647%, .4);
+    --message-highlighting-color-rgb: 121, 165, 65;
+    --message-highlighting-alpha: 0.4;
+}
+
+
+
+
+:root {
+    --color-primary: #3390ec;
+    --bg-primary: rgb(51 144 236 / 4%);
+    --bg-primary-hover: rgb(51 144 236 / 8%);
+    --white: #fff;
+    --black: #000;
+    --gray-50: #f9f9f9;
+    --gray-100: #ececec;
+    --gray-200: #e3e3e3;
+    --gray-300: #cdcdcd;
+    --gray-400: #b4b4b4;
+    --gray-500: #9b9b9b;
+    --gray-600: #676767;
+    --gray-700: #424242;
+    --gray-750: #2f2f2f;
+    --gray-800: #212121;
+    --gray-900: #171717;
+    --gray-950: #0d0d0d;
+    --red-500: #ef4444;
+    --red-700: #b91c1c;
+    --brand-purple: #ab68ff;
+}
+
+
+html {
+    --text-primary: var(--gray-950);
+    --text-secondary: #7d7d7d;
+    --text-tertiary: var(--gray-400);
+    --text-quaternary: var(--gray-300);
+    --text-error: #f93a37;
+    --bg-error: rgb(249 58 55 / 8%);
+    --text-success: #10a37f;
+    --bg-success: rgb(16 163 127 / 4%);
+    --bg-success-hover: rgb(16 163 127 / 8%);
+    --surface-error: 249 58 55;
+    --border-light: rgba(0, 0, 0, .1);
+    --border-medium: rgba(0, 0, 0, .15);
+    --border-heavy: rgba(0, 0, 0, .2);
+    --border-xheavy: rgba(0, 0, 0, .25);
+    --border-sharp: rgb(0 0 0 / 5%);
+    --main-surface-primary: var(--white);
+    --main-surface-secondary: var(--gray-50);
+    --main-surface-tertiary: var(--gray-100);
+    --sidebar-surface-primary: var(--gray-50);
+    --sidebar-surface-secondary: var(--gray-100);
+    --sidebar-surface-tertiary: var(--gray-200);
+    --link: #2964aa;
+    --link-hover: #749ac8;
+    --selection: #007aff;
+    --link-bg: rgb(41 100 170 / 4%);
+    --link-bg-hover: rgb(41 100 170 / 8%);
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* --bg-write: rgb(252 252 252 / 86%); */
+    --bg-write: 252 252 252;
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+    padding: 100px 8px;
+    background-color: rgb(var(--bg-write) / 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+
+
+
+
+
+
+
+.ql-container {
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.ql-bubble .ql-tooltip.ql-flip {
+    background-color: #fff;
+    border-radius: 25px;
+    /* color: #222; */
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 2%), 0px 4px 8px 0px rgb(0 0 0 / 4%);
+    z-index: 999;
+}
+
+
+.ql-bubble .ql-tooltip:not(.ql-flip) {
+    background-color: #fff;
+    border-radius: 12px;
+    color: var(--color-text-secondary);
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 2%), 0px -4px 8px 0px rgb(0 0 0 / 4%);
+    z-index: 999;
+}
+
+.ql-bubble .ql-tooltip.ql-flip .ql-tooltip-arrow {
+    border-top: 6px solid #fff;
+    bottom: -6px;
+}
+
+.ql-bubble .ql-tooltip:not(.ql-flip) .ql-tooltip-arrow {
+    border-bottom: 6px solid #fff;
+    top: -6px;
+}
+
+.ql-bubble .ql-toolbar .ql-formats:first-child {
+    margin-left: 8px;
+}
+
+
+
+
+
+
+.ql-bubble.ql-toolbar button,
+.ql-bubble .ql-toolbar button {
+    height: 32px;
+    padding: 6px 6px;
+    width: 32px;
+    border-radius: 6px;
+}
+
+.ql-bubble.ql-toolbar button svg,
+.ql-bubble .ql-toolbar button svg {
+    float: none;
+}
+
+.ql-bubble.ql-toolbar button:hover,
+.ql-bubble .ql-toolbar button:hover,
+.ql-bubble.ql-toolbar button:focus,
+.ql-bubble .ql-toolbar button:focus,
+.ql-bubble.ql-toolbar .ql-picker-label:hover,
+.ql-bubble .ql-toolbar .ql-picker-label:hover,
+.ql-bubble.ql-toolbar .ql-picker-item:hover,
+.ql-bubble .ql-toolbar .ql-picker-item:hover,
+
+.ql-bubble.ql-toolbar button.ql-active,
+.ql-bubble .ql-toolbar button.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected {
+    background-color: var(--color-background-selected);
+    background-color: var(--main-surface-secondary);
+}
+
+
+
+.ql-bubble.ql-toolbar button.ql-active,
+.ql-bubble .ql-toolbar button.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected {
+    background-color: var(--color-item-active);
+}
+
+
+
+
+
+
+
+rect.ql-stroke {
+    fill: none;
+    stroke: var(--color-icon-secondary);
+    stroke: var(--text-secondary);
+    stroke: var(--text-tertiary);
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+}
+
+.ql-stroke.ql-fill {
+    fill: rgba(0, 0, 0, .34);
+    fill: var(--color-text-secondary);
+}
+
+.ql-even {
+    fill-rule: evenodd;
+}
+
+.ql-fill {
+    fill: var(--color-icon-secondary);
+    fill: var(--text-secondary);
+    fill: var(--text-tertiary);
+}
+
+.ql-stroke {
+    stroke: var(--text-tertiary);
+}
+
+
+
+
+
+.ql-bubble .ql-fill {
+    fill: var(--color-icon-secondary);
+}
+
+.ql-bubble .ql-stroke.ql-fill,
+.ql-bubble .ql-stroke {
+    stroke: var(--color-icon-secondary);
+}
+
+.ql-bubble.ql-toolbar button:hover .ql-fill,
+.ql-bubble .ql-toolbar button:hover .ql-fill,
+.ql-bubble.ql-toolbar button:focus .ql-fill,
+.ql-bubble .ql-toolbar button:focus .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-fill,
+.ql-bubble.ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button:hover .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button:focus .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill {
+    fill: var(--color-icon-secondary);
+}
+
+.ql-bubble.ql-toolbar button:hover .ql-stroke,
+.ql-bubble .ql-toolbar button:hover .ql-stroke,
+.ql-bubble.ql-toolbar button:focus .ql-stroke,
+.ql-bubble .ql-toolbar button:focus .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke,
+.ql-bubble.ql-toolbar button:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar button:hover .ql-stroke-miter,
+.ql-bubble.ql-toolbar button:focus .ql-stroke-miter,
+.ql-bubble .ql-toolbar button:focus .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke-miter {
+    stroke: darkslategray;
+}
+
+
+
+
+
+.ql-bubble.ql-toolbar button.ql-active .ql-fill,
+.ql-bubble .ql-toolbar button.ql-active .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-fill,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
+    fill: var(--color-icon-secondary);
+}
+
+
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+.ql-bubble.ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-bubble .ql-toolbar button.ql-active .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+.ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+.ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: var(--color-icon-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ql-tooltip.ql-editing[data-mode="video"] {
+    margin-top: -40px;
+    margin-left: 21px;
+    box-shadow: none;
+    left: 0 !important;
+    z-index: 999;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+::-webkit-input-placeholder {
+    color: var(--color-text-secondary-apple);
+}
+
+.ql-bubble .ql-tooltip-editor input[type=text] {
+    color: var(--color-text-secondary);
+    font-family: monospace;
+    padding: 0;
+    letter-spacing: 1px;
+    background: white;
+    margin-left: -21px;
+}
+
+.ql-tooltip.ql-editing[data-mode="video"] a.ql-close {
+    display: none;
+}
+
+button.ql-image,
+button.ql-video {
+    display: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* #toolbarFloating */
+
+#toolbarFloating {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .15s;
+    z-index: 1;
+    margin-left: -36px;
+    margin-top: -4px;
+}
+
+#toolbarFloating button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 36px;
+    padding: 6px 6px;
+    width: 36px;
+    border-radius: 6px;
+}
+
+#toolbarFloating button svg {
+    width: 24px;
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR */
+
+
+#editor {
+    position: relative;
+    max-width: 732px;
+    max-width: 617px;
+    max-width: 65ch;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 200px);
+    width: 100%;
+}
+
+
+.ql-editor {
+    caret-color: var(--color-primary);
+    caret-color: var(--link);
+    line-height: 1.5;
+    padding: 12px 15px 12px 100px;
+    margin-left: -50px;
+    width: 100%;
+}
+
+.editor-container {
+    position: relative;
+    max-width: 732px;
+    margin: 0 auto;
+    transition: left 1.15s;
+}
+
+
+
+p {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1+p {
+    letter-spacing: 0.5px;
+}
+
+.ql-bubble .ql-editor h1 {
+    position: relative;
+}
+
+
+
+.ql-editor h1::after {
+    content: 'Title';
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity .15s;
+    font-weight: 400;
+    color: #9b9b9b;
+}
+
+.ql-editor h1.h1-presholder:after {
+    opacity: 0;
+}
+
+.ql-editor h1::before {
+    content: 'Title';
+    color: #9b9b9b;
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: -100px;
+    top: 0;
+    opacity: 0;
+    transition: opacity .15s;
+    padding-right: 12px;
+    border-right: 1px solid var(--color-borders-input);
+    font-weight: 400;
+}
+
+.ql-editor h1.focush1::before {
+    opacity: 0;
+    transition: opacity .15s;
+}
+
+.ql-editor h1.h1-presholder.focush1:before {
+    opacity: 1;
+}
+
+
+.ql-editor h1+.p-presholder:after,
+.ql-editor h1+p+p.p-presholder::after {
+    opacity: 0;
+}
+
+.ql-editor h1+.p-presholder::before {
+    content: 'You name';
+    color: var(--color-borders-input);
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: -104px;
+    top: 0;
+    opacity: 0;
+    transition: opacity .15s;
+    padding-right: 12px;
+    border-right: 1px solid var(--color-borders-input);
+}
+
+.ql-editor h1+.p-presholder::before {
+    opacity: 0;
+    transition: opacity .15s;
+}
+
+.ql-editor h1+.p-presholder.focusp:before {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ql-editor h1+p {
+    position: relative;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 12px 21px !important;
+    margin-bottom: 32px !important;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none;
+    color: var(--color-text-secondary);
+    display: none;
+}
+
+
+.ql-editor h1+p::after {
+    content: 'You name';
+    color: var(--color-borders-input);
+    color: var(--color-text-secondary);
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity .15s;
+}
+
+.ql-editor h1+p+p {
+    position: relative;
+}
+
+.ql-editor h1+p+p::after {
+    content: 'Your story';
+    color: #9b9b9b;
+    pointer-events: none;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity .15s;
+}
+
+
+
+
+
+
+
+
+
+body.publisOk .editor-container {
+    pointer-events: none;
+}
+
+body.publisOk .editor-container #editor {
+    pointer-events: auto;
+    cursor: default;
+}
+
+
+
+body.publisOk h1::before,
+body.publisOk h1+.p-presholder::before {
+    display: none;
+}
+
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+.ql-editor h1+p,
+h1::after,
+h1+p::after,
+h1+p::before,
+h1+p+p::after {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#messageDiv {
+    position: absolute;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-family: monospace;
+    backdrop-filter: blur(4px);
+    right: 0px;
+    margin: 0 auto;
+    z-index: 1;
+    font-size: 13px;
+    border-radius: var(--border-radius-default);
+}
+
+
+
+
+
+
+
+
+
+
+body.publisOk .publishBar {}
+
+
+
+
+
+
+
+
+
+
+
+button.btnCopy {}
+
+button.btnCopy:hover {
+    background-color: var(--light-primary-color);
+    background-color: var(--color-background-selected);
+}
+
+
+
+#wordCount {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: var(--text-secondary);
+    color: var(--text-tertiary);
+    /* padding-right: 60px; */
+}
+
+.login {
+    display: flex;
+    gap: 8px;
+    margin: 0;
+}
+
+
+
+body.onlyWrite .login,
+/* body.onlyWrite #wordCount, */
+/* body.onlyWrite #publishbtn, */
+body.onlyWrite .btnCopy {
+    pointer-events: none;
+}
+
+body.onlyWrite #wordCount {
+    /* opacity: 0; */
+}
+
+body.hover-onlyWrite .login,
+body.hover-onlyWrite #wordCount,
+body.hover-onlyWrite #publishbtn,
+body.hover-onlyWrite .btnCopy {}
+
+body.hover-onlyWrite #wordCount {}
+
+
+body.message .login,
+body.message #publishbtn,
+body.message .btnCopy,
+body.message .wordCountDiv {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+body.message #editor-container {
+    opacity: .04;
+}
+
+
+
+
+
+.publishAllbtn {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+body.publisOk #editor-container #toolbarFloating {
+    opacity: 0 !important;
+}
+
+body.publisOk #editor-container p,
+body.publisOk #editor-container h1,
+body.publisOk #editor-container h2,
+body.publisOk #editor-container h3,
+body.publisOk #editor-container h4,
+body.publisOk #editor-container h5,
+body.publisOk #editor-container h6,
+body.publisOk #editor-container blockquote,
+body.publisOk #editor-container h1::after,
+body.publisOk #editor-container h1+p::after,
+body.publisOk #editor-container h1+p::before,
+body.publisOk #editor-container h1+p+p::after {
+    color: var(--color-text);
+}
+
+body.publisOk #editor-container .ql-editor h1+p {
+    color: var(--color-text-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+body.open-sidebar .authuserBox {
+    display: flex;
+}
+
+body.open-sidebar .authuserBox.listBox {}
+
+body.authuser #editor-container {}
+
+body.open-sidebar #editor-container {}
+
+
+
+.authuserBox {
+    display: none;
+    position: absolute;
+    margin-top: 36px;
+    height: auto;
+    max-height: calc(100vh - 70px - 8px - 60px);
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 91;
+    align-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background: var(--color-background-compact-menu);
+    /* background-color: rgb(var(--bg-write) / 100%); */
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    transition: left .15s;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--border-light);
+    border-color: transparent;
+    border-radius: 1rem;
+    width: 20rem;
+    max-width: 20rem;
+    padding: 8px;
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 2%), 0px 4px 8px 0px rgb(0 0 0 / 4%);
+}
+
+.authuserBox p {
+    margin: 0;
+}
+
+
+
+
+span.list-user-files-date {
+    font-size: 13px;
+    color: red;
+}
+
+
+.list-user-files.have-post li.no-publish,
+.create-new-post button {}
+
+.authuserBox.listBox>.authuserBox__list>p {
+    display: none;
+}
+
+.ul-list-file li.highlighted {
+    background: var(--sidebar-surface-secondary);
+    pointer-events: none;
+}
+
+.ul-list-file li.highlighted button.settingPost,
+.ul-list-file li.highlighted button.settingPost+div {
+    pointer-events: auto;
+}
+
+
+
+.ul-list-file li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-radius: .5rem;
+    font-size: .875rem;
+}
+
+
+
+.ul-list-file li a {
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--black);
+    padding: 0.5rem .5rem;
+}
+
+.ul-list-file li:hover {
+    background-color: var(--sidebar-surface-secondary);
+    background-color: var(--main-surface-secondary);
+}
+
+
+
+
+
+
+
+
+
+.auth-user {
+    position: fixed;
+    background: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.auth-form {}
+
+.hi-img {
+    height: 203px;
+}
+
+.hi-img img {
+    max-width: 160px;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+
+img.hi-img2-pass,
+.hi-img.hide-img-password img.hi-img1 {
+    display: none;
+}
+
+.hi-img.hide-img-password img.hi-img2-pass {
+    display: block;
+    margin: 0 auto;
+    max-width: 160px;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 2.5rem;
+}
+
+
+
+.auth-form {
+    width: 100%;
+    max-width: 25.5rem;
+    margin: 0 auto;
+    padding: 6.8125rem 1.5rem 1.5rem;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Roboto", "Apple Color Emoji", "Helvetica Neue", sans-serif;
+    z-index: 22222;
+    position: relative;
+}
+
+input {
+    --border-width: 1px;
+    --border-radius-default: 0.75rem;
+    display: block;
+    width: 100%;
+    height: 3.375rem;
+    padding: calc(.75rem - var(--border-width)) calc(.9rem - var(--border-width));
+    border: var(--border-width) solid var(--color-borders-input);
+    border-radius: var(--border-radius-default);
+    outline: none;
+    transition: border-color .15s ease;
+    word-break: break-word;
+    -webkit-appearance: none;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    margin-bottom: 1.5rem;
+    background-color: rgb(var(--bg-write) / 100%);
+}
+
+input#profileUsername {}
+
+label {
+    display: block;
+    padding: 0 .25rem;
+    position: absolute;
+    left: .75rem;
+    top: .7375rem;
+    background-color: rgb(var(--bg-write) / 100%);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9b9b9b;
+    transition: transform .15s ease-out, color .15s ease-out;
+    cursor: var(--custom-cursor, text);
+    pointer-events: none;
+    transform-origin: left center;
+    white-space: nowrap;
+    order: 1;
+}
+
+input:focus+label,
+input.get-focus+label {
+    transform: scale(0.85) translate(-0.25rem, -2rem);
+}
+
+
+
+
+
+
+span#usernameMessage,
+span#passwordMessage,
+span#questionMessage,
+span#newPasswordMessage {
+    position: relative;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    font-size: 13px;
+    text-align: left;
+    padding: 0px 14px;
+    z-index: -1;
+    color: var(--text-secondary);
+    transition: all .15s;
+}
+
+span#usernameMessage[style="color: green;"]+input,
+span#passwordMessage[style="color: green;"]+input {
+    border-color: green;
+    color: green;
+}
+
+span#usernameMessage[style="color: green;"]+input+label,
+span#passwordMessage[style="color: green;"]+input+label {
+    color: green;
+}
+
+span#usernameMessage[style="color: red;"]+input,
+span#passwordMessage[style="color: red;"]+input {
+    border-color: red;
+    color: red;
+}
+
+span#usernameMessage[style="color: red;"]+input+label,
+span#passwordMessage[style="color: red;"]+input+label {
+    color: red;
+}
+
+
+form.profileUsername span#usernameMessage,
+form.password span#passwordMessage,
+span#questionMessage {
+    opacity: 1;
+}
+
+
+
+button#togglePassword,
+button#toggleNewPassword {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: auto;
+    padding: 19px;
+    width: auto;
+    background: transparent;
+    /* color: var(--color-text-secondary); */
+    color: var(--text-tertiary);
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+form.profileUsername #passwordSection,
+form.profileUsername #registrationSection,
+form.password #usernameSection,
+form.password #registrationSection {
+    opacity: .15;
+}
+
+
+
+
+
+
+
+
+
+button {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    border-color: transparent;
+    height: 2.5rem;
+    border-radius: .5rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: var(--border-radius-default);
+}
+
+button svg {
+    width: 15.5px;
+    height: auto;
+}
+
+:disabled {
+    pointer-events: none;
+}
+
+div#usernameSection,
+div#passwordSection,
+div#registrationSection,
+div#changePasswordSection,
+div#registrationSection>div,
+div#secret_questionSection {
+    display: flex;
+    flex-direction: column;
+}
+
+
+div#usernameSection>span,
+div#passwordSection>span,
+div#registrationSection>span,
+div#passwordSection>span,
+div#changePasswordSection>span,
+div#secret_questionSection>span {
+    order: 2;
+}
+
+div#usernameSection>input,
+div#passwordSection>input,
+div#registrationSection>input,
+div#changePasswordSection>input,
+div#passwordSection>input,
+div#secret_questionSection>input {
+    order: 0;
+}
+
+div#usernameSection>label,
+div#passwordSection>label,
+div#registrationSection>label,
+div#changePasswordSection>label,
+div#passwordSection>label,
+div#secret_questionSection>label {
+    order: 1;
+}
+
+div#usernameSection>button,
+div#passwordSection>button,
+div#registrationSection>button,
+div#changePasswordSection>button,
+div#passwordSection>button,
+div#secret_questionSection>button {
+    order: 9;
+}
+
+
+div#passwordSection button#forgotPasswordButton {
+    order: 10;
+}
+
+div#registrationSection>div>span {
+    order: 2;
+}
+
+
+#secretQuestionSection span#secretQuestion {
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 0px 12px;
+}
+
+form#deleteAccountForm button {
+    background: transparent;
+    color: var(--text-error);
+}
+
+form#deleteAccountForm button:hover {
+    background: var(--bg-error);
+}
+
+.profile-out {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-out form {
+    width: 100%;
+}
+
+.auth-form button {
+    width: 100%;
+    justify-content: center;
+    min-height: 54px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 600;
+}
+
+form#logoutForm button {
+    color: var(--text-secondary);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.authuserBox__list {
+    width: 100%;
+}
+
+.authuserBox__list>a {}
+
+.authuserBox p:nth-child(1) {
+    color: var(--text-secondary);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    padding-top: .5rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    position: relative;
+    margin-bottom: 1.75rem;
+}
+
+.authuserBox p:nth-child(1) svg {
+    padding-left: .125rem;
+    width: 1.25rem;
+    height: auto;
+    color: var(--text-tertiary);
+    position: absolute;
+    margin-left: 2.125rem;
+    margin-top: 1px;
+    top: 8px;
+    right: 8px;
+}
+
+
+
+
+
+.authuserBox__list .ul-list-file ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+
+.button-get button {
+    display: flex;
+    font-size: 0;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+}
+
+
+
+.button-get button:last-child,
+.button-get button:last-child svg path {
+    color: var(--text-error);
+}
+
+.button-get button:last-child:hover {
+    background: var(--bg-error);
+}
+
+
+
+.button-get button:after {
+}
+
+
+.button-get button:nth-child(1):after {
+    content: ''
+}
+
+
+.button-get button:nth-child(2):after {
+    content: ''
+}
+
+.button-get button:nth-child(3):after {
+    content: ''
+}
+
+.button-get {
+    display: none;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+    width: auto;
+    position: absolute;
+    align-items: flex-start;
+    padding-right: 8px;
+    padding-left: 32px;
+    background-image: linear-gradient(-90deg, white 80%, transparent);
+}
+
+button.settingPost.active+.button-get {
+    display: flex;
+}
+
+.header-sidebar {
+    position: fixed;
+    z-index: 9;
+    top: 8px;
+    display: flex;
+    width: calc(100% - 16px);
+    justify-content: space-between;
+}
+
+
+button.bottom-open-sidebar {
+    background: transparent;
+    border-color: transparent;
+}
+
+body.authuser button.bottom-open-sidebar {}
+
+button.new-post {
+    background: transparent;
+    border-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+button.bottom-open-sidebar h1 {
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: none;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin: 0;
+}
+
+
+button.bottom-open-sidebar h1 span {
+    color: var(--color-primary);
+    color: var(--link);
+}
+
+button svg path {
+    color: var(--text-secondary);
+}
+
+button.bottom-open-sidebar svg path {
+    color: var(--text-tertiary);
+}
+
+button:hover {
+    background: var(--main-surface-secondary);
+}
+
+body.open-sidebar .authuserBox .authuserBox__list h2,
+body.open-sidebar .authuserBox .authuserBox__list h2+p {
+    display: none;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    text-align: center;
+}
+
+body.authuser.open-sidebar .authuserBox .authuserBox__list p:nth-child(1) {
+    display: none;
+}
+
+body.authuser.open-sidebar .authuserBox .authuserBox__list p:nth-child(1)+h2+p {
+    display: block;
+    margin-bottom: 2.5rem;
+    font-size: .875rem;
+}
+
+body.authuser.open-sidebar .authuserBox.listBox .authuserBox__list p:nth-child(1)+h2+p {
+    display: none;
+}
+
+
+
+body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
+    display: block;
+}
+
+.login-authuserBox {
+    color: var(--text-tertiary);
+    margin: 0 auto;
+    margin-top: -.75rem;
+    position: sticky;
+    bottom: 0;
+    background: rgb(255 255 255 / 92%);
+    backdrop-filter: blur(10px);
+}
+
+.login-authuserBox:after {
+    content: '';
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    background: rgb(255 255 255 / 92%);
+    backdrop-filter: blur(10px);
+}
+
+.em {
+    height: 1px;
+    background: var(--border-light);
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: .25rem;
+    margin-top: .25rem;
+}
+
+.login-authuserBox button {
+    text-align: left;
+    background: transparent;
+    border-color: transparent;
+    gap: .625rem;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    border-radius: .375rem;
+    width: 100%;
+}
+
+.login-authuserBox button:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.login-authuserBox button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+
+button svg+span {
+    position: absolute;
+    background: var(--gray-950);
+    color: var(--white);
+    margin-top: 4.75rem;
+    margin-left: -.75rem;
+    padding-bottom: .75rem;
+    padding-top: .75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    font-size: .875rem;
+    border-radius: .375rem;
+    font-weight: 600;
+    display: none;
+    width: max-content;
+}
+
+
+.button-get button:hover svg+span {
+    margin-top: -4.75rem;
+    margin-left: 0;
+    padding-bottom: .75rem;
+    padding-top: 0.75rem;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    right: -.25rem;
+}
+
+
+
+button:hover svg+span {
+    display: block;
+    z-index: 9999;
+}
+
+
+
+
+
+
+
+
+button#publishbtn {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .5px;
+}
+
+button#publishbtn:not(.disabled):not(:disabled) {
+    background-color: var(--bg-primary);
+    background-color: var(--link-bg);
+    color: var(--color-primary);
+    color: var(--link);
+}
+
+
+button#loginButton {
+    background-color: var(--bg-primary);
+    background-color: var(--link-bg);
+    color: var(--color-primary);
+    color: var(--link);
+}
+
+
+button#loginButton:not(.disabled):not(:disabled):hover,
+button#publishbtn:not(.disabled):not(:disabled):hover {
+    background-color: var(--bg-primary-hover);
+    background-color: var(--link-bg-hover);
+}
+
+button#continueRegistrationButton, button#continueQuestionButton, button#registerButton, button[onclick="changeSecretQuestion()"] {
+    color: var(--text-success);
+    background-color: var(--bg-success);
+}
+
+button#continueRegistrationButton:not(.disabled):not(:disabled):hover, button#continueQuestionButton:not(.disabled):not(:disabled):hover, button#registerButton:not(.disabled):not(:disabled):hover, button[onclick="changeSecretQuestion()"]:not(.disabled):not(:disabled):hover {
+    background-color: var(--bg-success-hover);
+}
+
+button#forgotPasswordButton {
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.25px;
+}
+
+
+
+
+body.publisOk.editNo #editor-container,
+body.publisOk.editNo .login,
+body.publisOk.editNo .publishAllbtn .wordCountDiv,
+body.publisOk.editNo .publishAllbtn button.btnCopy {
+    opacity: .08;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.preloader {
+    background: var(--main-surface-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+
+.preloader-none {
+    animation: fadeOut .3s ease-in-out forwards;
+    opacity: 1;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+
+.preloader>div {
+    max-width: 55ch;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+.preloader>div>span:first-child {
+    margin-right: 2.5ch;
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: none;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+}
+
+.preloader>div>span:first-child>span {
+    color: var(--color-primary);
+    color: var(--link);
+}
+
+.preloader>div>span:last-child {
+    color: var(--text-primary);
+}
+
+span.cursor {
+    color: var(--color-primary);
+    color: var(--link);
+    font-size: 1.5rem;
+    position: absolute;
+    top: -.45rem;
+
+}
+
+
+
+
+.loading-indicator {
+    position: fixed;
+    background: rgb(255 255 255 / 75%);
+    backdrop-filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(270deg, rgb(226 226 226 / 0%) 48.44%, rgb(226 226 226) 75.52%, rgb(226 226 226 / 0%) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 1s infinite;
+}
+
+
+body.message .loading-indicator {
+    display: none !important;
+}
+
+
+
+
+@-webkit-keyframes bg-move {
+    0% {
+        background-position: -1800px 0;
+    }
+
+    100% {
+        background-position: 3600px 0;
+    }
+}
+
+@keyframes bg-move {
+    0% {
+        background-position: -1800px 0;
+    }
+
+    100% {
+        background-position: 3600px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+main#editor>h1+p {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.quill-focus .ql-editor {
+    color: rgba(200, 200, 200, 100);
+}
+
+.quill-focus .ql-editor>* {
+    transition: color 300ms;
+}
+
+.quill-focus .focused-blot {
+    color: var(--color-text);
+}
+
+.ql-table-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: #fff;
+    border: 2px solid #e9ebf0;
+    border-radius: 50%;
+    margin: 3px 0 0 -22px;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    fill: #b9bec7
+}
+
+.ql-table-toggle_hidden {
+    display: none
+}
+
+.ql-table-toggle:hover {
+    border-color: #b9bec7
+}
+
+.ql-table-menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    z-index: 2100;
+    box-shadow: rgba(15, 15, 15, 0.05) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 3px 6px, rgba(15, 15, 15, 0.2) 0 9px 24px;
+    border-radius: 4px;
+    animation: fadeIn 0.05s ease-in forwards
+}
+
+.ql-table-menu__item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    min-height: 32px;
+    padding: 5px
+}
+
+.ql-table-menu__item:hover {
+    background-color: #fafbfc
+}
+
+.ql-table-menu__item-icon {
+    margin-right: 5px
+}
+
+.ql-table-menu__item-text {
+    font: 300 12px
+}
+
+
+.ql-editor table,
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.ql-editor td,
+td {
+    border: 1px solid var(--border-light);
+    padding: 2px 5px;
+}
+
+.ql-editor table td,
+table td {
+    outline: none;
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(var(--bg-write) / 92%);
+    backdrop-filter: blur(8px);
+}
+
+footer .wordCountDiv {
+    width: 100%;
+    max-width: 732px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+strong.about {
+    margin-right: 0ch;
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    text-transform: none;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    position: relative;
+}
+
+strong.about span {
+    /* color: var(--color-primary); */
+    color: var(--link);
+    /* color: var(--link-hover); */
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--link-hover);
+}
