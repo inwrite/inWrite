@@ -87,9 +87,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 
         <div class="authuserBox">
             <div class="authuserBox__list">
-                <p>InWrite is a service for those who want to write and share their thoughts while maintaining their privacy.
-                    <a href="/about.php" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M13 12a1 1 0 1 0-2 0v4a1 1 0 1 0 2 0zM12 9.5A1.25 1.25 0 1 0 12 7a1.25 1.25 0 0 0 0 2.5"></path><path fill="currentColor" fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2M4 12a8 8 0 1 1 16 0 8 8 0 0 1-16 0" clip-rule="evenodd"></path></svg></a></p>
-
+                <p>InWrite is a service for those who want to write and share their thoughts freely and anonymously, while maintaining their privacy and ensuring their content remains secure. <br>The project's code is available on <a href="https://github.com/netwebdev/inWrite/" target="_blank">GitHub</a> for review, distribution, and modification.</p>
                 <h2>Your posts</h2>
                 <p>You haven't created any posts yet</p>
                 <div class="ul-list-file"></div>
