@@ -538,9 +538,10 @@ button.ql-video {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
     min-height: calc(100vh - 200px);
+    padding-top: calc(6.8125rem * 1);
     width: 100%;
 }
 
@@ -1931,7 +1932,7 @@ table td {
 footer {
     position: fixed;
     bottom: 0;
-    padding: 8px;
+    /* padding: 8px; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -1941,10 +1942,10 @@ footer {
 }
 
 footer .wordCountDiv {
-    width: 100%;
-    max-width: 732px;
+    width: calc(100% - 16px);
     display: flex;
     justify-content: flex-end;
+    padding: 8px;
 }
 
 
