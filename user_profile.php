@@ -1,25 +1,10 @@
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-$bodyClass = isset($_SESSION['username']) ? 'authuser' : '';
-$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
-    <?php $version = time();?>
-    <link rel="stylesheet" href="style.css?v=<?php echo $version; ?>" />
-
+<?php include 'head.php'; ?>
+<title>User Profile</title>
 </head>
-
 <body>
+
+
+
 
     <div class="auth-form">
 

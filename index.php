@@ -1,4 +1,14 @@
+<?php include 'head.php'; ?>
+<title>inWrite</title>
+</head>
+
+    <body class="<?php echo $bodyClass; ?>">
+
+
         <?php include 'header.php'; ?>
+
+
+
 
         <div class="editor-container" id="editor-container">
             <div id="toolbarFloating">
@@ -39,8 +49,6 @@
         </div>
 
         <?php include 'footer.php'; ?>
-
-        <?php include 'preloader.php'; ?>
 
     </body>
 </html>

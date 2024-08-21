@@ -1,42 +1,3 @@
-<?php
-if (session_status() == PHP_SESSION_NONE) {
-    session_start();
-}
-
-$bodyClass = isset($_SESSION['username']) ? 'authuser' : '';
-$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InWrite</title>
-    <?php $version = time(); ?>
-    <link href="https://cdn.jsdelivr.net/npm/quill@2.0.2/dist/quill.bubble.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css?v=<?php echo $version; ?>" />
-
-</head>
-
-<body class="<?php echo $bodyClass; ?>">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <header>
 
@@ -72,7 +33,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                 </button>
 
                 <button class="bottom-open-sidebar">
-                    <h1><span>I</span>nWrite</h1>
+                    <h1>in&#8203;Write</h1>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" class="icon-md text-token-text-tertiary">
                         <path fill="currentColor" fill-rule="evenodd" d="M5.293 9.293a1 1 0 0 1 1.414 0L12 14.586l5.293-5.293a1 1 0 1 1 1.414 1.414l-6 6a1 1 0 0 1-1.414 0l-6-6a1 1 0 0 1 0-1.414" clip-rule="evenodd"></path>
                     </svg>
@@ -87,7 +48,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 
         <div class="authuserBox">
             <div class="authuserBox__list">
-                <p>InWrite is a service for those who want to write and share their thoughts freely and anonymously, while maintaining their privacy and ensuring their content remains secure. <br>The project's code is available on <a href="https://github.com/netwebdev/inWrite/" target="_blank">GitHub</a> for review, distribution, and modification.</p>
+                <p>in&#8203;Write is a service for those who want to write and share their thoughts freely and anonymously, while maintaining their privacy and ensuring their content remains secure. <br>The project's code is available on <a href="https://github.com/netwebdev/inWrite/" target="_blank">GitHub</a> for review, distribution, and modification.</p>
                 <h2>Your posts</h2>
                 <p>You haven't created any posts yet</p>
                 <div class="ul-list-file"></div>
