@@ -2,8 +2,8 @@
 function validateUsername() {
     var username = document.getElementById('profileUsername').value;
     var message = "";
-    var messageColor = "var(--text-error)";
-    var regex = /^[a-z0-9-]{2,}$/; // Только строчные буквы, цифры и дефисы
+    var messageColor = "var(--text-error-)";
+    var regex = /^[a-z0-9-]{2,}$/;
 
     if (username.length < 2) {
         message = "Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.";
@@ -11,7 +11,7 @@ function validateUsername() {
         message = "Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.";
     } else {
         message = "Username is valid.";
-        messageColor = "var(--text-success)";
+        messageColor = "var(--text-success-)";
     }
 
     document.getElementById('usernameMessage').innerText = message;
@@ -40,7 +40,7 @@ function validatePassword() {
 
     var password = passwordField.value;
     var message = "";
-    var messageColor = "var(--text-error)";
+    var messageColor = "var(--text-error-)";
     var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
 
     ['continueQuestionButton', 'loginButton', 'forgotPasswordButton', 'changePasswordButton'].forEach(function(id) {
@@ -123,7 +123,7 @@ function validateQuestionAndAnswer() {
     var isValidAnswer = answer.length > 0;
 
     document.getElementById('questionMessage').innerText = isValidQuestion ? 'Question is valid.' : 'Question must be at least 2 characters long.';
-    document.getElementById('questionMessage').style.color = isValidQuestion ? 'var(--text-success)' : 'var(--text-error)';
+    document.getElementById('questionMessage').style.color = isValidQuestion ? 'var(--text-success-)' : 'var(--text-error-)';
 
     var registerButton = document.getElementById('registerButton');
     if (registerButton) {
@@ -181,7 +181,7 @@ function checkUsername() {
             if (response.exists) {
                 messageElement.innerText = 'Username is taken';
                 // messageElement.style.color = 'var(--color-primary)';
-                messageElement.style.color = 'var(--link)';
+                messageElement.style.color = 'var(--link-)';
 
                 newButton.id = 'loginButton';
                 newButton.innerText = 'Login';
@@ -191,7 +191,7 @@ function checkUsername() {
                 };
             } else {
                 messageElement.innerText = 'Username is available';
-                messageElement.style.color = 'var(--text-success)';
+                messageElement.style.color = 'var(--text-success-)';
 
                 newButton.id = 'continueRegistrationButton';
                 newButton.innerText = 'Continue registration';
@@ -224,7 +224,7 @@ function checkUsername() {
 
     if (username.length < 2 || !/^[a-z0-9-]+$/.test(username)) {
         messageElement.innerText = 'Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.';
-        messageElement.style.color = 'var(--text-error)';
+        messageElement.style.color = 'var(--text-error-)';
         return;
     }
 
@@ -238,7 +238,7 @@ function checkUsername() {
             if (response.exists) {
                 messageElement.innerText = 'Username is taken';
                 // messageElement.style.color = 'var(--color-primary)';
-                messageElement.style.color = ' var(--link)';
+                messageElement.style.color = ' var(--link-)';
 
                 if (!document.getElementById('loginButton')) {
                     var newButton = document.createElement('button');
@@ -255,7 +255,7 @@ function checkUsername() {
                 }
             } else {
                 messageElement.innerText = 'Username is available';
-                messageElement.style.color = 'var(--text-success)';
+                messageElement.style.color = 'var(--text-success-)';
 
                 if (!document.getElementById('continueRegistrationButton')) {
                     var newButton = document.createElement('button');
@@ -290,7 +290,7 @@ function checkUsername() {
 //             loginButton.remove();
 //         }
 //         messageElement.innerText = 'Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.';
-//         messageElement.style.color = 'var(--text-error)';
+//         messageElement.style.color = 'var(--text-error-)';
 //     } else {
 //         checkUsername();
 //     }
@@ -313,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     loginButton.remove();
                 }
                 messageElement.innerText = 'Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.';
-                messageElement.style.color = 'var(--text-error)';
+                messageElement.style.color = 'var(--text-error-)';
             } else {
                 checkUsername();
             }

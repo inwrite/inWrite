@@ -48,7 +48,9 @@
 
         <div class="authuserBox">
             <div class="authuserBox__list">
-                <p>in&#8203;Write is a service for those who want to write and share their thoughts freely and anonymously, while maintaining their privacy and ensuring their content remains secure. <br>The project's code is available on <a href="https://github.com/netwebdev/inWrite/" target="_blank">GitHub</a> for review, distribution, and modification.</p>
+                <p>in&#8203;Write is a service for those who want to write and share their thoughts freely and anonymously, while maintaining their privacy and ensuring their content remains secure. <br><br>
+                The project's code is available on <a href="https://github.com/netwebdev/inWrite/" target="_blank">GitHub</a> for review, distribution, and modification.  <br><br>
+                InWrite is created and maintained by <a href="https://netwebdev.github.io/" target="_blank">Mikhail.</a></p>
                 <h2>Your posts</h2>
                 <p>You haven't created any posts yet</p>
                 <div class="ul-list-file"></div>
@@ -71,15 +73,15 @@
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 20C18.2652 20 18.5196 19.8946 18.7071 19.7071C18.8946 19.5196 19 19.2652 19 19L19 5C19 4.73478 18.8946 4.48043 18.7071 4.29289C18.5196 4.10536 18.2652 4 18 4L14 4C13.7348 4 13.4804 3.89464 13.2929 3.70711C13.1054 3.51957 13 3.26522 13 3C13 2.73478 13.1054 2.48043 13.2929 2.29289C13.4804 2.10536 13.7348 2 14 2L18 2C18.7956 2 19.5587 2.31607 20.1213 2.87868C20.6839 3.44129 21 4.20435 21 5L21 19C21 19.7956 20.6839 20.5587 20.1213 21.1213C19.5587 21.6839 18.7956 22 18 22L14 22C13.7348 22 13.4804 21.8946 13.2929 21.7071C13.1054 21.5196 13 21.2652 13 21C13 20.7348 13.1054 20.4804 13.2929 20.2929C13.4804 20.1054 13.7348 20 14 20L18 20Z" fill="currentColor" />
                                 <path d="M9.00031 7C8.73515 7 8.48085 7.10532 8.29333 7.29279C8.10586 7.48032 8.00054 7.73462 8.00054 7.99979C8.00054 8.26495 8.10586 8.51926 8.29332 8.70679L10.5863 10.9998L4.00041 10.9998C3.7352 10.9998 3.48085 11.1051 3.29331 11.2927C3.10578 11.4802 3.00043 11.7346 3.00043 11.9998C3.00043 12.265 3.10578 12.5194 3.29331 12.7069C3.48085 12.8944 3.7352 12.9998 4.00041 12.9998L10.5863 12.9998L8.29332 15.2928C8.11117 15.4814 8.01038 15.734 8.01266 15.9962C8.01493 16.2584 8.1201 16.5092 8.30551 16.6946C8.49091 16.88 8.74172 16.9852 9.00391 16.9875C9.2661 16.9897 9.5187 16.8889 9.7073 16.7068L13.7072 12.7068C13.8947 12.5193 14 12.265 14 11.9998C14 11.7346 13.8947 11.4803 13.7072 11.2928L9.7073 7.29279C9.51977 7.10532 9.26547 7 9.00031 7Z" fill="currentColor" />
                             </svg>
-                            To view and edit your publications?
+                            Log in to view and edit publications
                         </button>
                     <?php endif; ?>
                 </div>
+                
             </div>
         </div>
 
         <div class="publishAllbtn">
-            <!-- <div class="wordCountDiv"></div> -->
             <button id="publishbtn" class="btn-primary">Publish</button>
         </div>
 

@@ -11,8 +11,8 @@ function showMessage(message, isSuccess) {
     }
 
     messageDiv.innerText = message;
-    messageDiv.style.color = isSuccess ? 'var(--text-success)' : 'var(--text-error)';
-    messageDiv.style.backgroundColor = isSuccess ? 'var(--bg-success)' : 'var(--bg-error)';
+    messageDiv.style.color = isSuccess ? 'var(--text-success-)' : 'var(--text-error-)';
+    messageDiv.style.backgroundColor = isSuccess ? 'var(--text-success-bg)' : 'var(--text-error-bg)';
     messageDiv.style.display = 'block';
 
     document.body.classList.add('message');

@@ -6,6 +6,7 @@
 
     <footer>
     <div class="wordCountDiv"></div>
+    <!-- <div class="made">Made by <a href="https://www.netwebdev.com/" target="_blank">Mikhail</a></div> -->
     </footer>
 
 

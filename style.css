@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --border-radius-default: 0.75rem;
     --color-placeholders: #a2acb4;
     --color-error: #e53935;
@@ -118,15 +118,11 @@
     --message-highlighting-color: hsla(86.4, 43.846153%, 45.117647%, .4);
     --message-highlighting-color-rgb: 121, 165, 65;
     --message-highlighting-alpha: 0.4;
-}
-
-
+} */
 
 
 :root {
-    --color-primary: #3390ec;
-    --bg-primary: rgb(51 144 236 / 4%);
-    --bg-primary-hover: rgb(51 144 236 / 8%);
+
     --white: #fff;
     --black: #000;
     --gray-50: #f9f9f9;
@@ -144,39 +140,98 @@
     --red-500: #ef4444;
     --red-700: #b91c1c;
     --brand-purple: #ab68ff;
-}
-
-
-html {
-    --text-primary: var(--gray-950);
-    --text-secondary: #7d7d7d;
-    --text-tertiary: var(--gray-400);
-    --text-quaternary: var(--gray-300);
-    --text-error: #f93a37;
-    --bg-error: rgb(249 58 55 / 8%);
-    --text-success: #10a37f;
-    --bg-success: rgb(16 163 127 / 4%);
-    --bg-success-hover: rgb(16 163 127 / 8%);
-    --surface-error: 249 58 55;
-    --border-light: rgba(0, 0, 0, .1);
-    --border-medium: rgba(0, 0, 0, .15);
-    --border-heavy: rgba(0, 0, 0, .2);
-    --border-xheavy: rgba(0, 0, 0, .25);
-    --border-sharp: rgb(0 0 0 / 5%);
-    --main-surface-primary: var(--white);
-    --main-surface-secondary: var(--gray-50);
-    --main-surface-tertiary: var(--gray-100);
-    --sidebar-surface-primary: var(--gray-50);
-    --sidebar-surface-secondary: var(--gray-100);
-    --sidebar-surface-tertiary: var(--gray-200);
-    --link: #2964aa;
-    --link-hover: #749ac8;
-    --selection: #007aff;
-    --link-bg: rgb(41 100 170 / 4%);
-    --link-bg-hover: rgb(41 100 170 / 8%);
     font-size: 1rem;
     line-height: 1.75;
 }
+
+/* Стили для светлой темы */
+@media (prefers-color-scheme: light) {
+    html {
+        --text-primary: var(--gray-950);
+        --text-secondary: #7d7d7d;
+        --text-tertiary: var(--gray-400);
+        --text-quaternary: var(--gray-300);
+        --link: 41 100 170;
+        --link-: rgb(var(--link) / 100%);
+        --link-bg: rgb(var(--link) / 4%);
+        --link-bg-hover: rgb(var(--link) / 8%);
+        --text-error: 249 58 55;
+        --text-error-: rgb(var(--text-error) / 100%);
+        --text-error-bg: rgb(var(--text-error) / 4%);
+        --text-error-bg-hover: rgb(var(--text-error) / 8%);
+        --text-success: 16 163 127;
+        --text-success-: rgb(var(--text-success) / 100%);
+        --text-success-bg: rgb(var(--text-success) / 4%);
+        --text-success-bg-hover: rgb(var(--text-success) / 8%);
+        --border-light: rgba(0, 0, 0, .1);
+        --border-medium: rgba(0, 0, 0, .15);
+        --border-heavy: rgba(0, 0, 0, .2);
+        --border-xheavy: rgba(0, 0, 0, .25);
+        --border-sharp: rgb(0 0 0 / 5%);
+        --main-surface-primary: var(--white);
+        --main-surface-secondary: var(--gray-50);
+        --main-surface-tertiary: var(--gray-100);
+        --sidebar-surface-primary: var(--gray-50);
+        --sidebar-surface-secondary: var(--gray-100);
+        --sidebar-surface-tertiary: var(--gray-200);
+        --link-hover: #749ac8;
+        --bg-body: 252 252 252;
+        --bg-body-: rgb(var(--bg-body) / 100%);
+        --shadow-black: 0 0 0;
+        --shadow-black-: rgb(var(--shadow-black) / 4%);
+    }
+}
+
+/* Стили для темной темы */
+@media (prefers-color-scheme: dark) {
+
+
+    html {
+        --text-primary: var(--gray-100);
+        --text-secondary: var(--gray-400);
+        --text-tertiary: var(--gray-500);
+        --text-quaternary: var(--gray-600);
+        --text-error: #f93a37;
+        --border-light: hsla(0, 0%, 100%, .1);
+        --border-medium: hsla(0, 0%, 100%, .15);
+        --border-heavy: hsla(0, 0%, 100%, .2);
+        --border-xheavy: hsla(0, 0%, 100%, .25);
+        --border-sharp: hsla(0, 0%, 100%, .05);
+        --main-surface-primary: var(--gray-800);
+        --main-surface-secondary: var(--gray-750);
+        --main-surface-tertiary: var(--gray-700);
+        --sidebar-surface-primary: var(--gray-900);
+        --sidebar-surface-secondary: var(--gray-800);
+        --sidebar-surface-tertiary: var(--gray-750);
+        --link: #7ab7ff;
+        --link-hover: #5e83b3;
+        --surface-error: 249 58 55;
+        --link: 122 183 255;
+        --link-: rgb(var(--link) / 100%);
+        --link-bg: rgb(var(--link) / 4%);
+        --link-bg-hover: rgb(var(--link) / 8%);
+        --text-error: 249 58 55;
+        --text-error-: rgb(var(--text-error) / 100%);
+        --text-error-bg: rgb(var(--text-error) / 4%);
+        --text-error-bg-hover: rgb(var(--text-error) / 8%);
+        --text-success: 16 163 127;
+        --text-success-: rgb(var(--text-success) / 100%);
+        --text-success-bg: rgb(var(--text-success) / 4%);
+        --text-success-bg-hover: rgb(var(--text-success) / 8%);
+        --bg-body: 33 33 33;
+        --bg-body-: rgb(var(--bg-body) / 100%);
+        --shadow-black: 0 0 0;
+        --shadow-black-: rgb(var(--shadow-black) / 12%);
+    }
+
+
+
+}
+
+
+
+
+
 
 
 
@@ -184,19 +239,7 @@ html {
     box-sizing: border-box;
 }
 
-body {
-    /* --bg-write: rgb(252 252 252 / 86%); */
-    --bg-write: 252 252 252;
-    margin: 0;
-    padding: 0;
-    color: var(--text-primary);
-    padding: 100px 8px;
-    background-color: rgb(var(--bg-write) / 100%);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-user-select: none;
-    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-}
+body {margin: 0;padding: 0;color: var(--text-primary);padding: 100px 8px;background-color: rgb(var(--bg-body) / 100%);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-webkit-user-select: none;font-family: ui-sans-serif,-apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
 
 
 
@@ -291,7 +334,7 @@ body {
 .ql-bubble .ql-toolbar .ql-picker-label.ql-active,
 .ql-bubble.ql-toolbar .ql-picker-item.ql-selected,
 .ql-bubble .ql-toolbar .ql-picker-item.ql-selected {
-    background-color: var(--color-item-active);
+    background-color: var(--sidebar-surface-primary);
 }
 
 
@@ -302,9 +345,7 @@ body {
 
 rect.ql-stroke {
     fill: none;
-    stroke: var(--color-icon-secondary);
-    stroke: var(--text-secondary);
-    stroke: var(--text-tertiary);
+    stroke: var(--text-quaternary);
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 2;
@@ -320,13 +361,11 @@ rect.ql-stroke {
 }
 
 .ql-fill {
-    fill: var(--color-icon-secondary);
-    fill: var(--text-secondary);
-    fill: var(--text-tertiary);
+    fill: var(--text-quaternary);
 }
 
 .ql-stroke {
-    stroke: var(--text-tertiary);
+    stroke: var(--text-quaternary);
 }
 
 
@@ -334,12 +373,12 @@ rect.ql-stroke {
 
 
 .ql-bubble .ql-fill {
-    fill: var(--color-icon-secondary);
+    fill: var(--text-secondary);
 }
 
 .ql-bubble .ql-stroke.ql-fill,
 .ql-bubble .ql-stroke {
-    stroke: var(--color-icon-secondary);
+    stroke: var(--text-secondary);
 }
 
 .ql-bubble.ql-toolbar button:hover .ql-fill,
@@ -360,7 +399,7 @@ rect.ql-stroke {
 .ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke.ql-fill,
 .ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill,
 .ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke.ql-fill {
-    fill: var(--color-icon-secondary);
+    fill: var(--text-secondary);
 }
 
 .ql-bubble.ql-toolbar button:hover .ql-stroke,
@@ -379,7 +418,7 @@ rect.ql-stroke {
 .ql-bubble .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
 .ql-bubble.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
 .ql-bubble .ql-toolbar .ql-picker-item:hover .ql-stroke-miter {
-    stroke: darkslategray;
+    stroke: var(--text-secondary);
 }
 
 
@@ -398,7 +437,7 @@ rect.ql-stroke {
 .ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke.ql-fill,
 .ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill,
 .ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke.ql-fill {
-    fill: var(--color-icon-secondary);
+    fill: var(--text-primary);
 }
 
 
@@ -414,7 +453,7 @@ rect.ql-stroke {
 .ql-bubble .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
 .ql-bubble.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
 .ql-bubble .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
-    stroke: var(--color-icon-secondary);
+    stroke: var(--text-primary);
 }
 
 
@@ -445,7 +484,7 @@ rect.ql-stroke {
 }
 
 ::-webkit-input-placeholder {
-    color: var(--color-text-secondary-apple);
+    /* color: var(--color-text-secondary-apple); */
 }
 
 .ql-bubble .ql-tooltip-editor input[type=text] {
@@ -453,8 +492,8 @@ rect.ql-stroke {
     font-family: monospace;
     padding: 0;
     letter-spacing: 1px;
-    background: white;
-    margin-left: -21px;
+    background: rgb(var(--bg-body) / 100%);
+    margin-left: 28px;
 }
 
 .ql-tooltip.ql-editing[data-mode="video"] a.ql-close {
@@ -511,7 +550,17 @@ button.ql-video {
     height: 100%;
 }
 
+#toolbarFloating button:hover svg rect.ql-stroke {
+    stroke: var(--text-primary);
+}
 
+#toolbarFloating button:hover svg .ql-fill {
+    fill: var(--text-primary);
+}
+
+#toolbarFloating button:hover svg .ql-stroke {
+    stroke: var(--text-primary);
+}
 
 
 
@@ -547,8 +596,7 @@ button.ql-video {
 
 
 .ql-editor {
-    caret-color: var(--color-primary);
-    caret-color: var(--link);
+    caret-color: var(--link-);
     line-height: 1.5;
     padding: 12px 15px 12px 100px;
     margin-left: -50px;
@@ -591,7 +639,7 @@ h1+p {
     top: 0;
     transition: opacity .15s;
     font-weight: 400;
-    color: #9b9b9b;
+    color: var(--text-quaternary);
 }
 
 .ql-editor h1.h1-presholder:after {
@@ -600,7 +648,7 @@ h1+p {
 
 .ql-editor h1::before {
     content: 'Title';
-    color: #9b9b9b;
+    color: var(--text-quaternary);
     pointer-events: none;
     display: block;
     position: absolute;
@@ -609,7 +657,7 @@ h1+p {
     opacity: 0;
     transition: opacity .15s;
     padding-right: 12px;
-    border-right: 1px solid var(--color-borders-input);
+    border-right: 1px solid var(--border-light);
     font-weight: 400;
 }
 
@@ -694,7 +742,7 @@ h1+p {
 
 .ql-editor h1+p+p::after {
     content: 'Your story';
-    color: #9b9b9b;
+    color: var(--text-quaternary);
     pointer-events: none;
     display: block;
     position: absolute;
@@ -803,12 +851,10 @@ button.btnCopy:hover {
 
 
 
-#wordCount {
+#wordCount, .made {
     font-size: 0.75rem;
     line-height: 1rem;
-    color: var(--text-secondary);
     color: var(--text-tertiary);
-    /* padding-right: 60px; */
 }
 
 .login {
@@ -940,9 +986,9 @@ body.open-sidebar #editor-container {}
 .authuserBox {
     display: none;
     position: absolute;
-    margin-top: 36px;
+    margin-top: 46px;
     height: auto;
-    max-height: calc(100vh - 70px - 8px - 60px);
+    max-height: calc(100vh - 70px - -7px - 0px);
     overflow: hidden;
     overflow-y: scroll;
     z-index: 91;
@@ -951,22 +997,18 @@ body.open-sidebar #editor-container {}
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
-    background: var(--color-background-compact-menu);
-    /* background-color: rgb(var(--bg-write) / 100%); */
+    background-color: rgb(var(--bg-body) / 90%);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: left .15s;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--border-light);
     border-color: transparent;
     border-radius: 1rem;
     width: 20rem;
     max-width: 20rem;
     padding: 8px;
-    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1), 0 4px 6px -4px rgba(0, 0, 0, .1);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-    box-shadow: 0px 0px 0px 1px rgb(0 0 0 / 2%), 0px 4px 8px 0px rgb(0 0 0 / 4%);
+    box-shadow: 0px 0px 0px 1px var(--border-sharp), 0px 4px 8px 0px var(--shadow-black-);
 }
 
 .authuserBox p {
@@ -1098,7 +1140,7 @@ input {
     width: 100%;
     height: 3.375rem;
     padding: calc(.75rem - var(--border-width)) calc(.9rem - var(--border-width));
-    border: var(--border-width) solid var(--color-borders-input);
+    border: var(--border-width) solid var(--border-light);
     border-radius: var(--border-radius-default);
     outline: none;
     transition: border-color .15s ease;
@@ -1107,7 +1149,8 @@ input {
     font-size: 1rem;
     line-height: 1.25rem;
     margin-bottom: 1.5rem;
-    background-color: rgb(var(--bg-write) / 100%);
+    background-color: rgb(var(--bg-body) / 100%);
+    color: var(--text-primary);
 }
 
 input#profileUsername {}
@@ -1118,10 +1161,10 @@ label {
     position: absolute;
     left: .75rem;
     top: .7375rem;
-    background-color: rgb(var(--bg-write) / 100%);
+    background-color: rgb(var(--bg-body) / 100%);
     font-size: 1rem;
     font-weight: 400;
-    color: #9b9b9b;
+    color: var(--text-tertiary);
     transition: transform .15s ease-out, color .15s ease-out;
     cursor: var(--custom-cursor, text);
     pointer-events: none;
@@ -1148,7 +1191,7 @@ span#newPasswordMessage {
     margin-top: -1rem;
     margin-bottom: 1.5rem;
     width: 100%;
-    font-size: 13px;
+    font-size: .85rem;
     text-align: left;
     padding: 0px 14px;
     z-index: -1;
@@ -1232,7 +1275,7 @@ button {
     padding-right: .5rem;
     border: 1px solid;
     border-color: transparent;
-    border-radius: var(--border-radius-default);
+    /* color: var(--text-primary); */
 }
 
 button svg {
@@ -1309,11 +1352,11 @@ div#registrationSection>div>span {
 
 form#deleteAccountForm button {
     background: transparent;
-    color: var(--text-error);
+    color: var(--text-error-);
 }
 
 form#deleteAccountForm button:hover {
-    background: var(--bg-error);
+    background: var(--text-error-bg-hover);
 }
 
 .profile-out {
@@ -1382,6 +1425,20 @@ form#logoutForm button {
     right: 8px;
 }
 
+
+.authuserBox .made {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.authuserBox .made > span {
+    text-align: center;
+    width: 100%;
+    display: block;
+    font-size: .75rem;
+    color: var(--text-quaternary);
+}
 
 
 
@@ -1506,7 +1563,7 @@ button.bottom-open-sidebar svg path {
     color: var(--text-tertiary);
 }
 
-button:hover {
+button:hover, #toolbarFloating button:hover {
     background: var(--main-surface-secondary);
 }
 
@@ -1544,8 +1601,7 @@ body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
     margin-top: -.75rem;
     position: sticky;
     bottom: 0;
-    background: rgb(255 255 255 / 92%);
-    backdrop-filter: blur(10px);
+    background: rgb(var(--bg-body) / 100%);
 }
 
 .login-authuserBox:after {
@@ -1553,7 +1609,7 @@ body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
     position: absolute;
     height: 8px;
     width: 100%;
-    background: rgb(255 255 255 / 92%);
+    background: rgb(var(--bg-body) / 90%);
     backdrop-filter: blur(10px);
 }
 
@@ -1583,7 +1639,7 @@ body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
 
 .login-authuserBox button:hover {
     --tw-bg-opacity: 1;
-    background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+    background-color: var(--main-surface-secondary);
 }
 
 .login-authuserBox button svg {
@@ -1641,18 +1697,14 @@ button#publishbtn {
 }
 
 button#publishbtn:not(.disabled):not(:disabled) {
-    background-color: var(--bg-primary);
     background-color: var(--link-bg);
-    color: var(--color-primary);
-    color: var(--link);
+    color: var(--link-);
 }
 
 
 button#loginButton {
-    background-color: var(--bg-primary);
     background-color: var(--link-bg);
-    color: var(--color-primary);
-    color: var(--link);
+    color: var(--link-);
 }
 
 
@@ -1663,12 +1715,12 @@ button#publishbtn:not(.disabled):not(:disabled):hover {
 }
 
 button#continueRegistrationButton, button#continueQuestionButton, button#registerButton, button[onclick="changeSecretQuestion()"] {
-    color: var(--text-success);
-    background-color: var(--bg-success);
+    color: var(--text-success-);
+    background-color: var(--text-success-bg);
 }
 
 button#continueRegistrationButton:not(.disabled):not(:disabled):hover, button#continueQuestionButton:not(.disabled):not(:disabled):hover, button#registerButton:not(.disabled):not(:disabled):hover, button[onclick="changeSecretQuestion()"]:not(.disabled):not(:disabled):hover {
-    background-color: var(--bg-success-hover);
+    background-color: var(--text-success-bg-hover);
 }
 
 button#forgotPasswordButton {
@@ -1839,7 +1891,7 @@ main#editor>h1+p {
 
 
 .quill-focus .ql-editor {
-    color: rgba(200, 200, 200, 100);
+    color: var(--text-quaternary);
 }
 
 .quill-focus .ql-editor>* {
@@ -1847,7 +1899,7 @@ main#editor>h1+p {
 }
 
 .quill-focus .focused-blot {
-    color: var(--color-text);
+    color: var(--text-primary);
 }
 
 .ql-table-toggle {
@@ -1932,17 +1984,17 @@ table td {
 footer {
     position: fixed;
     bottom: 0;
-    /* padding: 8px; */
     width: 100%;
+    width: calc(100% - 16px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: rgb(var(--bg-write) / 92%);
     backdrop-filter: blur(8px);
+    gap: 8ch;
 }
 
 footer .wordCountDiv {
-    width: calc(100% - 16px);
     display: flex;
     justify-content: flex-end;
     padding: 8px;
@@ -1962,14 +2014,8 @@ strong.about {
     position: relative;
 }
 
-strong.about span {
-    /* color: var(--color-primary); */
-    color: var(--link);
-    /* color: var(--link-hover); */
-}
-
 a {
-    color: var(--link);
+    color: var(--link-);
 }
 
 a:hover {
