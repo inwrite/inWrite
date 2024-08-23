@@ -47,6 +47,7 @@
             </div>
             <div id="editor"></div>
         </div>
+        <div id="contenteditablefalse"></div>
 
         <?php include 'footer.php'; ?>
 

@@ -378,6 +378,30 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            const button = document.querySelector('#publishbtn');
+            
+            if (button && button.textContent.trim() === 'Edit publication') {
+                document.body.classList.add('publisOk');
+                
+                const editorDiv = document.querySelector('.ql-editor');
+                if (editorDiv) {
+                    editorDiv.setAttribute('contenteditable', 'false');
+                }
+
+                observer.disconnect(); // Остановить наблюдение после выполнения условия
+            }
+        });
+    });
+
+    observer.observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+});
+
 
 
 function showLoadingIndicator(isLoading) {
