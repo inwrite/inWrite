@@ -2041,3 +2041,7 @@ body.message div#contenteditablefalse {
     left: 0;
     backdrop-filter: grayscale(1) blur(8px);
 }
+
+span#usernameMessage[style="color: var(--link-);"] + input + label + button#continueRegistrationButton {
+    display: none !important;
+}
