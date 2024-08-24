@@ -69,7 +69,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $filepath = $userDir . $filename;
 
     $htmlContent = "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n";
-    $htmlContent .= "<meta charset=\"UTF-8\">\n<title>{$title}</title>\n";
+    $htmlContent .= "<meta charset=\"UTF-8\">\n";
+    $htmlContent .= "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n";
+    $htmlContent .= "<title>{$title}</title>\n";
     $htmlContent .= "<link rel=\"stylesheet\" href=\"/style.css\">\n"; 
     $htmlContent .= "</head>\n<body>\n<main id=\"editor\">\n";
     $htmlContent .= $content;
