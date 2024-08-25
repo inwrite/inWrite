@@ -767,8 +767,8 @@ body.publisOk .publishBar {}
 button.btnCopy {}
 
 button.btnCopy:hover {
-    background-color: var(--light-primary-color);
-    background-color: var(--color-background-selected);
+    /* background-color: var(--light-primary-color); */
+    /* background-color: var(--main-surface-secondary); */
 }
 
 
