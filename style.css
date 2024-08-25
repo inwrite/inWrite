@@ -23,9 +23,10 @@
 
 @media (prefers-color-scheme: light) {
     html {
-        --black-: 255 255 255;
-        --white-: 0 0 0;
+        --black-: 0 0 0;
+        --white-: 255 255 255;
         --black--: rgb(var(--black-) / 100%);
+        --bg-body-up: rgb(255 255 255);
         --text-primary: var(--gray-950);
         --text-secondary: #7d7d7d;
         --text-tertiary: var(--gray-400);
@@ -66,8 +67,9 @@
 
 
     html {
-        --black-: 0 0 0;
-        --white-: 255 255 255;
+        --black-: 255 255 255;
+        --white-: 0 0 0;
+        --bg-body-up: rgb(37 37 37);
         --text-primary: var(--gray-100);
         --text-secondary: var(--gray-400);
         --text-tertiary: var(--gray-500);
@@ -152,18 +154,17 @@ body {
 .ql-bubble .ql-tooltip.ql-flip {
     background-color: rgb(var(--white-) / 100%);
     border-radius: 25px;
-    /* color: #222; */
-    box-shadow: 0px 0px 0px 1px rgb(var(--black-) / 2%), 0px 4px 8px 0px rgb(var(--black-) / 2%);
+    box-shadow: 0px 0px 0px 1px var(--border-sharp), 0px 4px 8px 0px var(--shadow-black-);
     z-index: 999;
 }
 
 
 .ql-bubble .ql-tooltip:not(.ql-flip) {
-    background-color: rgb(var(--white-) / 100%);
+    background-color: var(--bg-body-up);
     border-radius: 12px;
     color: var(--text-secondary);
-    box-shadow: 0px 0px 0px 1px rgb(var(--black-) / 2%), 0px -4px 8px 0px rgb(var(--black-) / 4%);
     z-index: 999;
+    box-shadow: 0px 0px 0px 1px var(--border-sharp), 0px -4px 8px 0px var(--shadow-black-);
 }
 
 .ql-bubble .ql-tooltip.ql-flip .ql-tooltip-arrow {
@@ -172,8 +173,9 @@ body {
 }
 
 .ql-bubble .ql-tooltip:not(.ql-flip) .ql-tooltip-arrow {
-    border-bottom: 6px solid rgb(var(--white-) / 100%);
+    border-bottom: 6px solid var(--bg-body-up);
     top: -6px;
+    backdrop-filter: blur(20px);
 }
 
 .ql-bubble .ql-toolbar .ql-formats:first-child {
@@ -915,6 +917,7 @@ body.open-sidebar #editor-container {}
     justify-content: space-between;
     flex-wrap: nowrap;
     background-color: rgb(var(--bg-body) / 90%);
+    background-color: var(--bg-body-up);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     transition: left .15s;
@@ -925,7 +928,8 @@ body.open-sidebar #editor-container {}
     width: 20rem;
     max-width: 20rem;
     padding: 8px;
-    box-shadow: 0px 0px 0px 1px var(--border-sharp), 0px 4px 8px 0px var(--shadow-black-);
+    box-shadow: 0px 0px 0px 1px var(
+    --border-sharp), 0px 4px 8px 0px var(--shadow-black-);
 }
 
 .authuserBox p {
@@ -951,7 +955,7 @@ span.list-user-files-date {
 .ul-list-file li.highlighted {
     /* background: var(--sidebar-surface-secondary); */
     /* background: rgb(var(--link) / 4%); */
-    background: rgb(var(--white-) / 4%);
+    background: rgb(var(--white-) / 15%);
     pointer-events: none;
 }
 
@@ -1522,7 +1526,7 @@ body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
     margin-top: -.75rem;
     position: sticky;
     bottom: 0;
-    background: rgb(var(--bg-body) / 100%);
+    background: var(--bg-body-up);
 }
 
 .login-authuserBox:after {
@@ -1530,7 +1534,7 @@ body.authuser.open-sidebar .authuserBox .authuserBox__list h2 {
     position: absolute;
     height: 8px;
     width: 100%;
-    background: rgb(var(--bg-body) / 90%);
+    background: var(--bg-body-up);
     backdrop-filter: blur(10px);
 }
 
