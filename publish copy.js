@@ -101,7 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
                         <span>Copy link</span>
                     `;
                     copyButton.addEventListener('click', function() {
-                        copyToClipboard(linkElement.href);
+                        navigator.clipboard.writeText(linkElement.href)
+                            .then(() => {
+                                showMessage('Link copied!', true);
+                            })
+                            .catch(err => {
+                                console.error('Copy error:', err);
+                                showMessage('Failed to copy link.', false);
+                            });
                     });
 
                     const deleteButton = document.createElement('button');
@@ -353,13 +360,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
 
         copyBtn.addEventListener('click', () => {
-            copyToClipboard(link);
-        });
-    }
-
-    function copyToClipboard(text) {
-        if (navigator.clipboard) {
-            navigator.clipboard.writeText(text)
+            navigator.clipboard.writeText(link)
                 .then(() => {
                     showMessage('Link copied!', true);
                 })
@@ -367,42 +368,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     console.error('Copy error:', err);
                     showMessage('Failed to copy link.', false);
                 });
-        } else {
-            // Fallback method for browsers that don't support navigator.clipboard
-            copyToClipboardFallback(text);
-        }
+        });
     }
 
-    function copyToClipboardFallback(text) {
-        const textArea = document.createElement('textarea');
-        textArea.value = text;
-        textArea.style.position = 'fixed';
-        textArea.style.top = '0';
-        textArea.style.left = '0';
-        textArea.style.width = '2em';
-        textArea.style.height = '2em';
-        textArea.style.padding = '0';
-        textArea.style.border = 'none';
-        textArea.style.outline = 'none';
-        textArea.style.boxShadow = 'none';
-        textArea.style.background = 'transparent';
-        document.body.appendChild(textArea);
-        textArea.focus();
-        textArea.select();
 
-        try {
-            const successful = document.execCommand('copy');
-            showMessage(successful ? 'Link copied!' : 'Failed to copy link.', successful);
-        } catch (err) {
-            console.error('Copy error:', err);
-            showMessage('Failed to copy link.', false);
-        }
 
-        document.body.removeChild(textArea);
-    }
 
     loadHtmlFiles();
 });
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const observer = new MutationObserver(function(mutations) {
@@ -427,6 +404,8 @@ document.addEventListener('DOMContentLoaded', function() {
         subtree: true
     });
 });
+
+
 
 function showLoadingIndicator(isLoading) {
     let loadingIndicator = document.querySelector('.loading-indicator');

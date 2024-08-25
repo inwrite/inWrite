@@ -23,8 +23,8 @@
 
 @media (prefers-color-scheme: light) {
     html {
-        --black-: 0 0 0;
-        --white-: 255 255 255;
+        --black-: 255 255 255;
+        --white-: 0 0 0;
         --black--: rgb(var(--black-) / 100%);
         --text-primary: var(--gray-950);
         --text-secondary: #7d7d7d;
@@ -67,7 +67,7 @@
 
     html {
         --black-: 0 0 0;
-        --white-: 25 25 25;
+        --white-: 255 255 255;
         --text-primary: var(--gray-100);
         --text-secondary: var(--gray-400);
         --text-tertiary: var(--gray-500);
@@ -417,6 +417,12 @@ img {
     margin-bottom: 1.5rem;
 }
 
+
+.hi-img img {
+    box-shadow: none;
+    border-radius: 0;
+    margin-top: auto;
+}
 
 
 
@@ -943,7 +949,9 @@ span.list-user-files-date {
 }
 
 .ul-list-file li.highlighted {
-    background: var(--sidebar-surface-secondary);
+    /* background: var(--sidebar-surface-secondary); */
+    /* background: rgb(var(--link) / 4%); */
+    background: rgb(var(--white-) / 4%);
     pointer-events: none;
 }
 
@@ -973,7 +981,7 @@ span.list-user-files-date {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: var(--black);
+    color: var(--text-secondary);
     padding: 0.5rem .5rem;
 }
 
@@ -1408,15 +1416,15 @@ form#logoutForm button {
     justify-content: flex-end;
     flex-direction: row;
     right: 0px;
-    top: 0;
+    top: 0px;
+    height: 41px;
     z-index: 1;
-    -webkit-backdrop-filter: blur(10px);
     width: auto;
     position: absolute;
     align-items: flex-start;
     padding-right: 8px;
     padding-left: 32px;
-    background-image: linear-gradient(-90deg, white 80%, transparent);
+    background-image: linear-gradient(-90deg, rgb(var(--bg-body) / 100%) 80%, transparent);
 }
 
 button.settingPost.active+.button-get {
