@@ -426,7 +426,12 @@ img {
     margin-top: auto;
 }
 
-
+.ql-bubble .ql-picker-options {
+    background-color: var(--bg-body-up);
+    box-shadow: 0px 0px 0px 1px var(--border-sharp), 0px 4px 8px 0px var(--shadow-black-);
+    padding: 8px 8px !important;
+    border-radius: 8px;
+}
 
 
 

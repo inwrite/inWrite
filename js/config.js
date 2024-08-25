@@ -88,13 +88,14 @@ const quill = new Quill('#editor', {
 
 
 
-    // [{ 'align': [] }],
+    
       ['bold', 'italic'],
       ['image', 'video', 'link'],
       [{ 'header': 3 }, { 'header': 4 }],
       
       
       ['blockquote'],
+      [{ 'align': [] }],
       ['clean']                                        
     ]
   }
