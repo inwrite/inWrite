@@ -1741,7 +1741,8 @@ span.cursor {
 
 .loading-indicator {
     position: fixed;
-    background: rgb(255 255 255 / 75%);
+    /* background: rgb(255 255 255 / 75%); */
+    background: rgb(var(--bg-body) / 75%);
     backdrop-filter: blur(8px);
     width: 100%;
     height: 100%;
@@ -1751,7 +1752,8 @@ span.cursor {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(270deg, rgb(226 226 226 / 0%) 48.44%, rgb(226 226 226) 75.52%, rgb(226 226 226 / 0%) 100%);
+    /* background-image: linear-gradient(270deg, rgb(226 226 226 / 0%) 48.44%, rgb(226 226 226) 75.52%, rgb(226 226 226 / 0%) 100%); */
+    background-image: linear-gradient(270deg, rgb(var(--bg-body) / 0%) 48.44%, rgb(var(--bg-body) / 92%) 75.52%, rrgb(var(--bg-body) / 0%) 100%);
     background-repeat: no-repeat;
     animation: bg-move linear 1s infinite;
 }
