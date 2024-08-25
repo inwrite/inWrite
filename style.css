@@ -1,127 +1,24 @@
-/* :root {
-    --border-radius-default: 0.75rem;
-    --color-placeholders: #a2acb4;
-    --color-error: #e53935;
-    --color-error-shade: #d33431;
-    --color-error-rgb: 229, 57, 53;
-    --scrollbar-width: 0px;
-    --vh: 9px;
-    --composer-text-size: 15px;
-    --message-meta-height: 19px;
-    --message-text-size: 15px;
-    --color-primary: #3390ec;
-    --color-primary-opacity: rgb(80, 162, 233, 0.118);
-    --color-primary-opacity-hover: rgb(80, 162, 233, 0.251);
-    --color-primary-tint: rgb(51, 144, 236, 0.102);
-    --color-primary-shade: rgb(74, 149, 214);
-    --color-primary-shade-rgb: 74, 149, 214;
-    --color-background: rgb(255, 255, 255);
-    --color-background-compact-menu: rgb(255, 255, 255, 0.733);
-    --color-background-compact-menu-reactions: rgb(255, 255, 255, 0.922);
-    --color-background-compact-menu-hover: rgb(0, 0, 0, 0.067);
-    --color-background-secondary: rgb(244, 244, 245);
-    --color-background-secondary-accent: rgb(228, 228, 229);
-    --color-background-own: rgb(238, 255, 222);
-    --color-background-own-apple: rgb(220, 248, 197);
-    --color-background-selected: rgb(244, 244, 245);
-    --color-background-own-selected: rgb(208, 255, 172);
-    --color-chat-hover: rgb(244, 244, 245);
-    --color-chat-active: rgb(51, 144, 236);
-    --color-chat-active-greyed: rgb(96, 167, 240);
-    --color-item-active: rgb(237, 237, 237);
-    --color-text: rgb(0, 0, 0);
-    --color-text-rgb: 0, 0, 0;
-    --color-text-secondary: rgb(112, 117, 121);
-    --color-text-secondary-rgb: 112, 117, 121;
-    --color-icon-secondary: rgb(112, 117, 121);
-    --color-text-secondary-apple: rgb(142, 142, 146);
-    --color-borders: rgb(218, 220, 224);
-    --color-borders-input: rgb(218, 220, 224);
-    --color-dividers: rgb(200, 198, 204);
-    --color-dividers-android: rgb(231, 231, 231);
-    --color-links: rgb(51, 144, 236);
-    --color-gray: rgb(196, 201, 204);
-    --color-list-icon: rgb(171, 175, 177);
-    --color-default-shadow: rgb(114, 114, 114, 0.251);
-    --color-light-shadow: rgb(114, 114, 114, 0.169);
-    --color-green: rgb(0, 199, 62);
-    --color-green-darker: rgb(0, 167, 52);
-    --color-success: rgb(0, 199, 62);
-    --color-text-meta-colored: rgb(77, 205, 94);
-    --color-reply-hover: rgb(244, 244, 244);
-    --color-reply-active: rgb(232, 233, 233);
-    --color-reply-own-hover: rgb(217, 245, 206);
-    --color-reply-own-hover-apple: rgb(203, 239, 183);
-    --color-reply-own-active: rgb(197, 236, 190);
-    --color-reply-own-active-apple: rgb(186, 230, 168);
-    --color-accent-own: rgb(69, 175, 84);
-    --color-accent-own-rgb: 69, 175, 84;
-    --color-message-meta-own: rgb(79, 174, 78, 1);
-    --color-own-links: rgb(51, 144, 236);
-    --color-code: rgb(74, 114, 154);
-    --color-code-own: rgb(60, 121, 64);
-    --color-code-bg: rgb(112, 117, 121, 0.078);
-    --color-code-own-bg: rgb(112, 117, 121, 0.078);
-    --color-composer-button: rgb(112, 117, 121, 0.8);
-    --color-message-reaction: rgb(235, 243, 253);
-    --color-message-reaction-hover: rgb(197, 222, 249);
-    --color-message-reaction-own: rgb(198, 234, 178);
-    --color-message-reaction-hover-own: rgb(181, 224, 164);
-    --color-message-reaction-chosen-hover: rgb(26, 130, 234);
-    --color-message-reaction-chosen-hover-own: rgb(63, 157, 75);
-    --color-voice-transcribe-button: rgb(232, 243, 255);
-    --color-voice-transcribe-button-own: rgb(204, 238, 191);
-    --color-topic-blue: rgb(47, 119, 114);
-    --color-topic-yellow: rgb(127, 105, 59);
-    --color-topic-violet: rgb(139, 90, 150);
-    --color-topic-green: rgb(68, 119, 74);
-    --color-topic-rose: rgb(155, 87, 107);
-    --color-topic-red: rgb(235, 104, 88);
-    --color-topic-grey: rgb(108, 108, 108);
-    --color-forum-unread-topic-hover: rgb(233, 233, 233);
-    --color-forum-hover-unread-topic-hover: rgb(226, 226, 226);
-    --color-chat-username: rgb(60, 126, 176);
-    --color-borders-read-story: rgb(196, 201, 204);
-    --color-background-menu-separator: rgb(0, 0, 0, 0.102);
-    --primary-color: #3390ec;
-    --primary-color-rgb: 51, 144, 236;
-    --light-primary-color: rgba(51, 144, 236, 0.08);
-    --light-filled-primary-color: #eef6fd;
-    --dark-primary-color: hsl(209.83783783783787, 82.95964125560539%, 52.27450980392157%);
-    --saved-color: #3390ec;
-    --light-filled-saved-color: #7cb7f2;
-    --message-out-background-color: #e3fee0;
-    --message-out-background-color-rgb: 227, 254, 224;
-    --light-message-out-background-color: rgba(227, 254, 224, 0.12);
-    --light-filled-message-out-background-color: #fbfefb;
-    --dark-message-out-background-color: hsl(114.00000000000001, 93.75000000000003%, 81.72549019607843%);
-    --message-out-primary-color: #5ca853;
-    --message-out-primary-color-rgb: 92, 168, 83;
-    --light-filled-message-out-primary-color: #d8f7d4;
-    --surface-color: #ffffff;
-    --surface-color-rgb: 255, 255, 255;
-    --danger-color: #df3f40;
-    --danger-color-rgb: 223, 63, 64;
-    --light-danger-color: rgba(223, 63, 64, 0.08);
-    --dark-danger-color: hsl(359.625, 71.42857142857143%, 48.07843137254902%);
-    --primary-text-color: #000000;
-    --primary-text-color-rgb: 0, 0, 0;
-    --secondary-text-color: #707579;
-    --secondary-text-color-rgb: 112, 117, 121;
-    --light-secondary-text-color: rgba(112, 117, 121, 0.08);
-    --light-filled-secondary-text-color: #f3f3f4;
-    --message-background-color: #ffffff;
-    --light-message-background-color: rgba(255, 255, 255, 0.08);
-    --light-filled-message-background-color: #ffffff;
-    --dark-message-background-color: hsl(0, 0%, 92%);
-    --green-color: #70b768;
-    --message-highlighting-color: hsla(86.4, 43.846153%, 45.117647%, .4);
-    --message-highlighting-color-rgb: 121, 165, 65;
-    --message-highlighting-alpha: 0.4;
-} */
-
-
-:root {--white: #fff;--black: #000;--gray-50: #f9f9f9;--gray-100: #ececec;--gray-200: #e3e3e3;--gray-300: #cdcdcd;--gray-400: #b4b4b4;--gray-500: #9b9b9b;--gray-600: #676767;--gray-700: #424242;--gray-750: #2f2f2f;--gray-800: #212121;--gray-900: #171717;--gray-950: #0d0d0d;--red-500: #ef4444;--red-700: #b91c1c;--brand-purple: #ab68ff;font-size: 1rem;line-height: 1.75;}
+:root {
+    --white: #fff;
+    --black: #000;
+    --gray-50: #f9f9f9;
+    --gray-100: #ececec;
+    --gray-200: #e3e3e3;
+    --gray-300: #cdcdcd;
+    --gray-400: #b4b4b4;
+    --gray-500: #9b9b9b;
+    --gray-600: #676767;
+    --gray-700: #424242;
+    --gray-750: #2f2f2f;
+    --gray-800: #212121;
+    --gray-900: #171717;
+    --gray-950: #0d0d0d;
+    --red-500: #ef4444;
+    --red-700: #b91c1c;
+    --brand-purple: #ab68ff;
+    font-size: 1rem;
+    line-height: 1.75;
+}
 
 
 @media (prefers-color-scheme: light) {
@@ -223,7 +120,17 @@
     box-sizing: border-box;
 }
 
-body {margin: 0;padding: 0;color: var(--text-primary);padding: 100px 8px;background-color: rgb(var(--bg-body) / 100%);-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;-webkit-user-select: none;font-family: ui-sans-serif,-apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";}
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--text-primary);
+    padding: 100px 8px;
+    background-color: rgb(var(--bg-body) / 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    font-family: ui-sans-serif, -apple-system, system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
 
 
 
@@ -480,28 +387,34 @@ rect.ql-stroke {
     /* margin-left: 0; */
 }
 
-.ql-tooltip.ql-editing[data-mode="video"] a.ql-close, 
+.ql-tooltip.ql-editing[data-mode="video"] a.ql-close,
 .ql-bubble .ql-tooltip-editor a {
     display: none;
 }
 
 button.ql-image,
 button.ql-video {
-    display: none !important;
+    /* display: none !important; */
 }
 
 
 .ql-tooltip.ql-editing[data-mode="video"] input {
     margin-left: 0px;
     border-radius: 0;
+    background: rgb(var(--bg-body) / 100%);
 }
+
 .ql-tooltip.ql-editing[data-mode="video"] span.ql-tooltip-arrow {
     display: none;
 }
 
-img.blot-formatter__proxy-image, .ql-video, img {
+img.blot-formatter__proxy-image,
+iframe.ql-video,
+img {
     box-shadow: 0px 0px 0px 1px rgb(var(--black-) / 15%);
     border-radius: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 
@@ -847,7 +760,8 @@ button.btnCopy:hover {
 
 
 
-#wordCount, .made {
+#wordCount,
+.made {
     font-size: 0.75rem;
     line-height: 1rem;
     color: var(--text-tertiary);
@@ -1431,7 +1345,7 @@ form#logoutForm button {
     text-align: center;
 }
 
-.authuserBox .made > span {
+.authuserBox .made>span {
     text-align: center;
     width: 100%;
     display: block;
@@ -1470,8 +1384,7 @@ form#logoutForm button {
 
 
 
-.button-get button:after {
-}
+.button-get button:after {}
 
 
 .button-get button:nth-child(1):after {
@@ -1562,7 +1475,8 @@ button.bottom-open-sidebar svg path {
     color: var(--text-tertiary);
 }
 
-button:hover, #toolbarFloating button:hover {
+button:hover,
+#toolbarFloating button:hover {
     background: var(--main-surface-secondary);
 }
 
@@ -1713,12 +1627,18 @@ button#publishbtn:not(.disabled):not(:disabled):hover {
     background-color: var(--link-bg-hover);
 }
 
-button#continueRegistrationButton, button#continueQuestionButton, button#registerButton, button[onclick="changeSecretQuestion()"] {
+button#continueRegistrationButton,
+button#continueQuestionButton,
+button#registerButton,
+button[onclick="changeSecretQuestion()"] {
     color: var(--text-success-);
     background-color: var(--text-success-bg);
 }
 
-button#continueRegistrationButton:not(.disabled):not(:disabled):hover, button#continueQuestionButton:not(.disabled):not(:disabled):hover, button#registerButton:not(.disabled):not(:disabled):hover, button[onclick="changeSecretQuestion()"]:not(.disabled):not(:disabled):hover {
+button#continueRegistrationButton:not(.disabled):not(:disabled):hover,
+button#continueQuestionButton:not(.disabled):not(:disabled):hover,
+button#registerButton:not(.disabled):not(:disabled):hover,
+button[onclick="changeSecretQuestion()"]:not(.disabled):not(:disabled):hover {
     background-color: var(--text-success-bg-hover);
 }
 
@@ -2038,7 +1958,7 @@ body.message div#contenteditablefalse {
     backdrop-filter: grayscale(1) blur(8px);
 }
 
-span#usernameMessage[style="color: var(--link-);"] + input + label + button#continueRegistrationButton {
+span#usernameMessage[style="color: var(--link-);"]+input+label+button#continueRegistrationButton {
     display: none !important;
 }
 
@@ -2047,22 +1967,23 @@ span#usernameMessage[style="color: var(--link-);"] + input + label + button#cont
 @media (max-width: 768px) {
 
     #editor {
-        padding-top: calc(1rem *  1);
+        padding-top: calc(1rem * 1);
     }
+
     .ql-editor {
         padding: 12px 15px 12px 15px;
         margin-left: 0px;
     }
-    
+
     .ql-editor h1::before {
         display: none;
     }
-    
+
     #toolbarFloating {
         margin-left: auto;
         margin-right: 0;
         right: 0;
         left: auto !important;
     }
-        
+
 }
