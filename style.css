@@ -642,7 +642,7 @@ h1+p {
     top: 0;
     transition: opacity .15s;
     font-weight: 400;
-    color: var(--text-primary);
+    color: var(--text-tertiary);
 }
 
 .ql-editor h1.h1-presholder:after {
@@ -745,7 +745,7 @@ h1+p {
 
 .ql-editor h1+p+p::after {
     content: 'Your story';
-    color: var(--text-primary);
+    color: var(--text-tertiary);
     pointer-events: none;
     display: block;
     position: absolute;
