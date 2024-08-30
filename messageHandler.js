@@ -4,8 +4,8 @@ function showMessage(message, isSuccess) {
         messageDiv = document.createElement('div');
         messageDiv.id = 'messageDiv';
         messageDiv.style.position = 'fixed';
-        messageDiv.style.top = '8px';
-        messageDiv.style.right = '8px';
+        // messageDiv.style.top = '8px';
+        // messageDiv.style.right = '8px';
         messageDiv.style.zIndex = '1000';
         document.body.appendChild(messageDiv);
     }
@@ -20,7 +20,7 @@ function showMessage(message, isSuccess) {
     setTimeout(function() {
         messageDiv.style.display = 'none';
         document.body.classList.remove('message');
-    }, 2000);
+    }, 3000);
 }
 
 function saveMessageToLocalStorage(message, isSuccess) {

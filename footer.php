@@ -245,6 +245,136 @@
                     });
                 }
             });
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     // const themeToggleBtn = document.querySelector('.themeToggle');
+
+//     // if (themeToggleBtn) {
+//     //     themeToggleBtn.addEventListener('click', function() {
+//     //         const htmlElement = document.documentElement;
+
+//     //         if (htmlElement.classList.contains('light-theme')) {
+//     //             htmlElement.classList.remove('light-theme');
+//     //             htmlElement.classList.add('dark-theme');
+//     //             localStorage.setItem('theme', 'dark');
+//     //         } else {
+//     //             htmlElement.classList.remove('dark-theme');
+//     //             htmlElement.classList.add('light-theme');
+//     //             localStorage.setItem('theme', 'light');
+//     //         }
+//     //     });
+//     // }
+
+//     // Проверка сохранённой темы при загрузке страницы
+//     const savedTheme = localStorage.getItem('theme');
+//     if (savedTheme === 'dark') {
+//         document.documentElement.classList.add('dark-theme');
+//         document.documentElement.classList.remove('light-theme');
+//     } else if (savedTheme === 'light') {
+//         document.documentElement.classList.add('light-theme');
+//         document.documentElement.classList.remove('dark-theme');
+//     }
+// });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // const themeToggleBtn = document.querySelector('.themeToggle');
+
+    // Функция для установки темы
+    function setTheme(theme) {
+        const htmlElement = document.documentElement;
+        if (theme === 'dark') {
+            htmlElement.classList.add('dark-theme');
+            htmlElement.classList.remove('light-theme');
+            localStorage.setItem('theme', 'dark');
+        } else if (theme === 'light') {
+            htmlElement.classList.add('light-theme');
+            htmlElement.classList.remove('dark-theme');
+            localStorage.setItem('theme', 'light');
+        }
+    }
+
+    // Проверка сохранённой темы при загрузке страницы
+    const savedTheme = localStorage.getItem('theme');
+
+    if (savedTheme) {
+        setTheme(savedTheme);
+    } else {
+        // Если сохранённой темы нет, используем системные настройки
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+
+    // Переключение темы по нажатию на кнопку
+    // if (themeToggleBtn) {
+    //     themeToggleBtn.addEventListener('click', function() {
+    //         const htmlElement = document.documentElement;
+
+    //         if (htmlElement.classList.contains('light-theme')) {
+    //             setTheme('dark');
+    //         } else {
+    //             setTheme('light');
+    //         }
+    //     });
+    // }
+});
+
+
+// // Функция для применения сохраненной темы
+// function applySavedTheme() {
+//     const savedTheme = localStorage.getItem('theme');
+//     if (savedTheme === 'dark') {
+//         document.documentElement.classList.add('dark-theme');
+//         document.documentElement.classList.remove('light-theme');
+//     } else if (savedTheme === 'light') {
+//         document.documentElement.classList.add('light-theme');
+//         document.documentElement.classList.remove('dark-theme');
+//     } else {
+//         // Удаляем классы, если сохраненной темы нет
+//         document.documentElement.classList.remove('light-theme', 'dark-theme');
+//     }
+// }
+
+// // Применение темы при загрузке страницы
+// window.addEventListener('load', function() {
+//     applySavedTheme();
+// });
+
+// // Переключение темы по нажатию кнопки
+// document.getElementById('themeToggle').addEventListener('click', function() {
+//     const htmlElement = document.documentElement;
+
+//     if (htmlElement.classList.contains('light-theme')) {
+//         htmlElement.classList.remove('light-theme');
+//         htmlElement.classList.add('dark-theme');
+//         localStorage.setItem('theme', 'dark');
+//     } else {
+//         htmlElement.classList.remove('dark-theme');
+//         htmlElement.classList.add('light-theme');
+//         localStorage.setItem('theme', 'light');
+//     }
+// });
+
+
+
+
+
+
+
+
         </script>
 
 

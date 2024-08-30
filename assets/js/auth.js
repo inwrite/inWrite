@@ -67,7 +67,7 @@ function validatePassword() {
         message = "Password must contain at least one uppercase letter, one lowercase letter, one number, and one special character.";
     } else {
         message = "Password is valid.";
-        messageColor = "green";
+        messageColor = "var(--text-success-)";
 
         if (isRegistration) {
             var continueQuestionButton = document.createElement('button');
