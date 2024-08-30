@@ -1459,7 +1459,7 @@ div#registrationSection>div>span {
 
 form#deleteAccountForm button {
     background: transparent;
-    color: rgb(var(--text-error) / 50%);
+    color: rgb(var(--text-error) / 25%);
     justify-content: center;
 }
 
@@ -1470,7 +1470,7 @@ form#deleteAccountForm button:hover {
 
 
 form#deleteAccountForm  button svg path {
-    color: rgb(var(--text-error) / 50%);
+    color: rgb(var(--text-error) / 25%);
 }
 
 
@@ -1845,8 +1845,13 @@ span#usernameMessage[style="color: var(--link-);"] + input + label + button#logi
 button#loginButton:not(.disabled):not(:disabled):hover,
 button#publishbtn:not(.disabled):not(:disabled):hover {
     background-color: var(--link-bg-hover);
+}
+
+
+span#passwordMessage[style="color: var(--text-success-);"] + input + label + button + button + button#loginButton:not(.disabled):not(:disabled):hover {
     background-color: var(--text-success-bg-hover);
 }
+
 
 button#continueRegistrationButton,
 button#continueQuestionButton,
