@@ -296,8 +296,39 @@ function checkUsername() {
 //     }
 // });
 
+// document.addEventListener('DOMContentLoaded', function() {
+//     var profileUsernameElement = document.getElementById('profileUsername');
+//     if (profileUsernameElement) {
+//         profileUsernameElement.addEventListener('keyup', function() {
+//             var username = this.value;
+//             var messageElement = document.getElementById('usernameMessage');
+//             var continueRegistrationButton = document.getElementById('continueRegistrationButton');
+//             var loginButton = document.getElementById('loginButton');
+
+//             if (username.length < 2 || !/^[a-z0-9-]+$/.test(username)) {
+//                 if (continueRegistrationButton) {
+//                     continueRegistrationButton.remove();
+//                 }
+//                 if (loginButton) {
+//                     loginButton.remove();
+//                 }
+//                 messageElement.innerText = 'Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.';
+//                 messageElement.style.color = 'var(--text-error-)';
+//             } else {
+//                 checkUsername();
+//             }
+//         });
+//     } else {
+//     }
+// });
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
     var profileUsernameElement = document.getElementById('profileUsername');
+    var debounceTimeout;
+
     if (profileUsernameElement) {
         profileUsernameElement.addEventListener('keyup', function() {
             var username = this.value;
@@ -305,20 +336,21 @@ document.addEventListener('DOMContentLoaded', function() {
             var continueRegistrationButton = document.getElementById('continueRegistrationButton');
             var loginButton = document.getElementById('loginButton');
 
+            if (continueRegistrationButton) {
+                continueRegistrationButton.remove();
+            }
+            if (loginButton) {
+                loginButton.remove();
+            }
+
             if (username.length < 2 || !/^[a-z0-9-]+$/.test(username)) {
-                if (continueRegistrationButton) {
-                    continueRegistrationButton.remove();
-                }
-                if (loginButton) {
-                    loginButton.remove();
-                }
                 messageElement.innerText = 'Username must be at least 2 characters long and contain only lowercase Latin letters, numbers, and hyphens.';
                 messageElement.style.color = 'var(--text-error-)';
             } else {
-                checkUsername();
+                clearTimeout(debounceTimeout); // Очистка предыдущего таймера
+                debounceTimeout = setTimeout(checkUsername, 300); // Задержка перед проверкой
             }
         });
-    } else {
     }
 });
 
