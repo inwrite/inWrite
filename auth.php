@@ -6,8 +6,21 @@
 
 <div class="auth-form">
     <div class="hi-img">
-        <img src="video/ResistanceDog_AgADxgADVp29Cg.gif" alt="" class="hi-img1">
-        <img src="video/ResistanceDog_AgAD2wADVp29Cg.gif" alt="" class="hi-img2-pass">
+        <!-- <img src="video/ResistanceDog_AgADxgADVp29Cg.gif" alt="" class="hi-img1"> -->
+        <!-- <img src="video/ResistanceDog_AgAD2wADVp29Cg.gif" alt="" class="hi-img2-pass"> -->
+
+
+<div class="container" id="cow">
+  <div class="hat">
+  <div class="hat-bottom"></div>
+  </div>
+  <div class="glasses">
+    
+    <div class='eye'></div>
+    <div class='eye'></div>
+  </div>
+</div>
+
     </div>
 
     <form id="authForm" onsubmit="return false;">
@@ -240,6 +253,65 @@ const newPostButton = document.querySelector('.new-post');
             newPostButton.addEventListener('click', function() {
                 window.location.href = '/';
             });
+
+</script>
+
+
+
+<script>
+document.body.addEventListener('mousemove', function(event) {
+  var eyes = document.querySelectorAll('.eye');
+  
+  eyes.forEach(function(eye) {
+    var eyeRect = eye.getBoundingClientRect();
+    var x = eyeRect.left + (eyeRect.width / 2);
+    var y = eyeRect.top + (eyeRect.height / 2);
+    var rad = Math.atan2(event.pageX - x, event.pageY - y);
+    var rot = (rad * (180 / Math.PI) * -1) + 180;
+    eye.style.transform = 'rotate(' + rot + 'deg)';
+  });
+});
+
+document.body.addEventListener('mouseenter', function() {
+  var eyes = document.querySelectorAll('.eye');
+  
+  eyes.forEach(function(eye) {
+    eye.style.display = 'inherit';
+  });
+});
+
+document.body.addEventListener('mouseleave', function() {
+  var eyes = document.querySelectorAll('.eye');
+  
+  eyes.forEach(function(eye) {
+    // eye.style.display = 'none';
+  });
+});
+
+
+
+
+
+
+
+var passwordSection = document.getElementById('passwordSection');
+var hiImgs = document.querySelectorAll('.hi-img');
+
+var observer = new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (getComputedStyle(passwordSection).display === 'flex') {
+      hiImgs.forEach(function(hiImg) {
+        hiImg.classList.add('lookpass');
+      });
+    } else {
+      hiImgs.forEach(function(hiImg) {
+        hiImg.classList.remove('lookpass');
+      });
+    }
+  });
+});
+
+observer.observe(passwordSection, { attributes: true, attributeFilter: ['style'] });
 
 </script>
 

@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 messageElement.style.color = 'var(--text-error-)';
             } else {
                 clearTimeout(debounceTimeout); // Очистка предыдущего таймера
-                debounceTimeout = setTimeout(checkUsername, 300); // Задержка перед проверкой
+                debounceTimeout = setTimeout(checkUsername, 600); // Задержка перед проверкой
             }
         });
     }

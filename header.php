@@ -1,5 +1,23 @@
 <header>
+<div style="position: absolute; z-index: -1;width: 100%; height: 100%; border-radius: 0px; transform: scaleY(-1); background: linear-gradient(180.3444711790446deg, rgb(var(--sidebar-surface-primary-rgb) / 0%) 0%, rgb(var(--sidebar-surface-primary-rgb) / 1%) 14.247293770313263%, rgb(var(--sidebar-surface-primary-rgb) / 4%) 26.620104908943176%, rgb(var(--sidebar-surface-primary-rgb) / 9%) 37.29010820388794%, rgb(var(--sidebar-surface-primary-rgb) / 14%) 46.42897844314575%, rgb(var(--sidebar-surface-primary-rgb) / 22%) 54.208385944366455%, rgb(var(--sidebar-surface-primary-rgb) / 30%) 60.79999804496765%, rgb(var(--sidebar-surface-primary-rgb) / 38%) 66.37549996376038%, rgb(var(--sidebar-surface-primary-rgb) / 47%) 71.10655307769775%, rgb(var(--sidebar-surface-primary-rgb) / 56%) 75.16483664512634%, rgb(var(--sidebar-surface-primary-rgb) / 65%) 78.72201800346375%, rgb(var(--sidebar-surface-primary-rgb) / 74%) 81.94977641105652%, rgb(var(--sidebar-surface-primary-rgb) / 82%) 85.01977920532227%, rgb(var(--sidebar-surface-primary-rgb) / 89%) 88.10369968414307%, rgb(var(--sidebar-surface-primary-rgb) / 95%) 91.37321710586548%, rgb(var(--sidebar-surface-primary-rgb) / 100%) 94.9999988079071%);">
 
+        <div style="position: absolute; inset: 0px; z-index: 1; backdrop-filter: blur(0.0703125px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0) 37.5%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 2; backdrop-filter: blur(0.140625px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 12.5%, rgb(0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 50%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 3; backdrop-filter: blur(0.28125px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgb(0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 62.5%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 4; backdrop-filter: blur(0.5625px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 37.5%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgba(0, 0, 0, 0) 75%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 5; backdrop-filter: blur(1.125px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 87.5%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 6; backdrop-filter: blur(2.25px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 62.5%, rgb(0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 7; backdrop-filter: blur(4.5px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0) 87.5%, rgb(0, 0, 0) 100%); border-radius: 0px; pointer-events: none;"></div>
+
+        <div style="position: absolute; inset: 0px; z-index: 8; backdrop-filter: blur(9px); mask-image: linear-gradient(rgba(0, 0, 0, 0) 87.5%, rgb(0, 0, 0) 100%); border-radius: 0px; pointer-events: none;"></div>
+        
+    </div>
 
 
     <div class="header-sidebar">
